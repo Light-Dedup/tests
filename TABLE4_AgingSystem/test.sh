@@ -26,7 +26,7 @@ for job in "${NUM_JOBS[@]}"; do
             for fsize in "${FILE_SIZE[@]}"; do
                 TIMER=${TIMERS[$STEP]}
                 
-                OUTPUT=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M 0 "${BRANCHES[$STEP]}" "$fsize" "$age")
+                OUTPUT=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M 0 "${BRANCHES[$STEP]}" "$fsize" "$age" "0x120")
               
                 READS=$(echo "$OUTPUT" | grep MediaReads | awk '{print $2}')
                 WRITES=$(echo "$OUTPUT" | grep MediaWrites | awk '{print $2}')
