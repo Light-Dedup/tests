@@ -17,7 +17,7 @@ for dup_rate in "${DEDUP_RATES[@]}"; do
             OUTPUT=$ABS_PATH/M_DATA/"$dup_rate-$fsize-$job"
             EACH_SIZE=$(split_workset "$fsize" "$job")
             sudo dmesg -C
-            BW=$(bash ../../nvm_tools/fio_nova.sh "$job" "${EACH_SIZE}"M "$dup_rate" "nv-dedup" "1" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
+            BW=$(bash ../../nvm_tools/fio_nvdedup.sh "$job" "${EACH_SIZE}"M "$dup_rate" "master" "1" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
            
             cat /proc/fs/NOVA/pmem1/timing_stats > "$OUTPUT"
             
