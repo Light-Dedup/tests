@@ -10,8 +10,8 @@ FSCRIPT_PRE_FIX=$ABS_PATH/"SCRIPTS"
 mkdir -p "$ABS_PATH"/M_DATA
 
 FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA" )
-SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "master" "sha256" "nv-dedup" "original" )
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
+BRANCHES=( "master" "sha256" "master" "original" )
 FILE_BENCHES=( "fileserver.f" "varmail.f" "webproxy.f" "webserver.f" )
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table"

@@ -6,8 +6,8 @@ mkdir -p "$ABS_PATH"/M_DATA
 NUM_JOBS=( 1 2 4 8 16 )
 
 FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
-SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh")
-BRANCHES=( "master" "sha256" "nv-dedup" "original" )
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh")
+BRANCHES=( "master" "sha256" "master" "original" )
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table-NV-Dedup"
 table_create "$TABLE_NAME" "file_system num_job first_bw second_bw"
