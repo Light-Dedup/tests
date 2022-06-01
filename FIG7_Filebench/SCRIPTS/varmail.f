@@ -23,7 +23,7 @@
 # Use is subject to license terms.
 #
 
-set $dir=/mnt/pmem1
+set $dir=/mnt/pmem0
 set $nfiles=1000000
 set $meandirwidth=1000000
 set $meanfilesize=32k

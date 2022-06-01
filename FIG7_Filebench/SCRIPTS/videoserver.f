@@ -33,7 +33,7 @@
 # 10 seconds. Thus the write bandwidth will be set as $filesize/$repintval.
 #
 
-set $dir=/mnt/pmem1
+set $dir=/mnt/pmem0
 set $eventrate=96
 set $filesize=128m
 set $nthreads=8

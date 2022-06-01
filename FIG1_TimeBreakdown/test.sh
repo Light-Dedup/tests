@@ -19,7 +19,7 @@ for dup_rate in "${DEDUP_RATES[@]}"; do
             sudo dmesg -C
             BW=$(bash ../../nvm_tools/fio_nvdedup.sh "$job" "${EACH_SIZE}"M "$dup_rate" "master" "1" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
            
-            cat /proc/fs/NOVA/pmem1/timing_stats > "$OUTPUT"
+            cat /proc/fs/NOVA/pmem0/timing_stats > "$OUTPUT"
             
             whole_time=$(nova_attr_time_stats "do_cow_write" "$OUTPUT") 
             io_time=$(nova_attr_time_stats "memcpy_write_nvmm" "$OUTPUT") 

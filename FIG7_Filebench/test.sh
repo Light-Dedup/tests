@@ -23,9 +23,9 @@ for file_bench in "${FILE_BENCHES[@]}"; do
     for file_system in "${FILE_SYSTEMS[@]}"; do
         bash ../../nvm_tools/"${SETUPS[$STEP]}" "${BRANCHES[$STEP]}" "0"
         
-        block_start=$(get_pmem_block pmem1)
+        block_start=$(get_pmem_block pmem0)
         sudo /usr/local/bin/filebench -f "$FSCRIPT_PRE_FIX"/"$file_bench" | tee "$ABS_PATH"/M_DATA/"$file_bench"-"$file_system"
-        block_end=$(get_pmem_block pmem1)
+        block_end=$(get_pmem_block pmem0)
 
         iops=$(filebench_attr_iops "$ABS_PATH"/M_DATA/"$file_bench"-"$file_system")
        

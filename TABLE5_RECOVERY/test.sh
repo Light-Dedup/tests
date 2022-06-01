@@ -23,8 +23,8 @@ for file_system in "${FILE_SYSTEMS[@]}"; do
 
             bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
             _=$(bash ../../nvm_tools/helper/fio.sh "$job" "${EACH_SIZE}"M 0)
-            UMOUNT_TIME=$( (time sudo umount /mnt/pmem1) 2>&1 | grep real | awk '{print $2}' )
-            RECOVERY_TIME=$( (time sudo mount -t NOVA -o wprotect,data_cow /dev/pmem1 /mnt/pmem1) 2>&1 | grep real | awk '{print $2}' )
+            UMOUNT_TIME=$( (time sudo umount /mnt/pmem0) 2>&1 | grep real | awk '{print $2}' )
+            RECOVERY_TIME=$( (time sudo mount -t NOVA -o wprotect,data_cow /dev/pmem0 /mnt/pmem0) 2>&1 | grep real | awk '{print $2}' )
 
             table_add_row "$TABLE_NAME" "$file_system $fsize $UMOUNT_TIME $RECOVERY_TIME"
         done
