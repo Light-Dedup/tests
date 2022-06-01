@@ -3,7 +3,7 @@
 BRANCHES=( "master" "original")
 PROCESSES=( 1 2 4 8 16 )
 
-cd ../../bin || exit
+cd ../../Light-Dedup || exit
 echo "branch process GiB_PER_THREAD block write_bandwidth(MiB/s)" > ../tests/FIG8_IOR/ior-table
 
 for branch in "${BRANCHES[@]}"; do

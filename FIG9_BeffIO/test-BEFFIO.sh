@@ -4,7 +4,7 @@ BRANCHES=( "master" "original")
 
 PROCESSES=( 1 2 4 8 16 )
 
-cd ../../bin || exit
+cd ../../Light-Dedup || exit
 echo "branch process block bw(MiB/s)" > ../tests/FIG9_BeffIO/b_eff_io-table
 
 for branch in "${BRANCHES[@]}"; do
