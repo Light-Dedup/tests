@@ -9,7 +9,7 @@ echo "branch process block bw(MiB/s)" > ../tests/FIG9_BeffIO/b_eff_io-table
 
 for branch in "${BRANCHES[@]}"; do
     for process in "${PROCESSES[@]}"; do
-        sudo ../../nvm_tools/setup_nova.sh "$branch" "0"
+        bash ../../nvm_tools/setup_nova.sh "$branch" "0"
         sudo chmod -R 777 /mnt/pmem0
         block_start=$(df -B 4K | grep /dev/pmem0 | awk '{print $3}')
         
