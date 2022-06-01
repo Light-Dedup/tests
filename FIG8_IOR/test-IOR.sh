@@ -8,7 +8,7 @@ echo "branch process GiB_PER_THREAD block write_bandwidth(MiB/s)" > ../tests/FIG
 
 for branch in "${BRANCHES[@]}"; do
     for process in "${PROCESSES[@]}"; do
-        bash ../../nvm_tools/setup_nova.sh "$branch" "0"
+        bash ../nvm_tools/setup_nova.sh "$branch" "0"
         block_start=$(df -B 4K | grep /dev/pmem0 | awk '{print $3}')
         sudo chmod -R 777 /mnt/pmem0
 
