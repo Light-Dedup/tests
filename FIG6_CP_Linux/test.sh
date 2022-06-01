@@ -9,7 +9,7 @@ FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
 SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh")
 BRANCHES=( "master" "sha256" "master" "original" )
 
-TABLE_NAME="$ABS_PATH/performance-comparison-table-NV-Dedup"
+TABLE_NAME="$ABS_PATH/performance-comparison-table"
 table_create "$TABLE_NAME" "file_system num_job first_bw second_bw"
 
 STEP=0
