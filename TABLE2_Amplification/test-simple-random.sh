@@ -26,7 +26,7 @@ for job in "${NUM_JOBS[@]}"; do
             TIMER=${TIMERS[$STEP]}
 
             bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
-            OUTPUT=$(bash ../../nvm_tools/percore_amount_simple_random.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" 0x120)
+            OUTPUT=$(bash ../../nvm_tools/percore_amount_simple_random.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" 0x20)
             FIRST_TIME=$(echo "$OUTPUT" | grep FirstTime | awk '{print $2}')
             FIRST_READ=$(echo "$OUTPUT" | grep FirstRead | awk '{print $2}')
             FIRST_WRITE=$(echo "$OUTPUT" | grep FirstWrite | awk '{print $2}')
