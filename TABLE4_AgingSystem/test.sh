@@ -40,9 +40,9 @@ for job in "${NUM_JOBS[@]}"; do
                 AgingWrite=$(echo "$WRITES" | sed -n "2p") 
                 
                 
-                table_add_row "$TABLE_NAME_NEWLY" "$file_system file_system ${fsize}G $NewlyRead $NewlyWrite $NewlyWriteLAT  $NewlyWriteBW"     
+                table_add_row "$TABLE_NAME_NEWLY" "$file_system ${fsize} $NewlyRead $NewlyWrite $NewlyWriteLAT $NewlyWriteBW"     
                 
-                table_add_row "$TABLE_NAME_AGING" "$file_system file_system ${fsize}G $AgingRead $AgingWrite $AgingWriteLAT $AgingWriteBW"
+                table_add_row "$TABLE_NAME_AGING" "$file_system ${fsize} $AgingRead $AgingWrite $AgingWriteLAT $AgingWriteBW"
    
             done
             STEP=$((STEP + 1))

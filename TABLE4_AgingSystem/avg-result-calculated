@@ -1,0 +1,5 @@
+system metadata_layout read_amp write_amp throughput(MiB/s) latency(ns)
+FreshSystem Region 1.27 1.38 1002 3896
+FreshSystem Entry 1.61 1.48 962 4059
+AgedSystem Region 2.52 1.65 912 4283
+AgedSystem Entry 16.3 8.7 804 4854

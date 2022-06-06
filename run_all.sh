@@ -15,6 +15,12 @@ do
     else
         bash test.sh > $OUTNAME
     fi
+    
+    # Run Process Script
+    if [ -f "process.py" ]; then
+        python3 process.py
+    fi
+  
     cd - || exit
  fi
 done
