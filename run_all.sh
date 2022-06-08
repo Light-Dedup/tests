@@ -2,6 +2,8 @@
 
 OUTNAME="stdout"
 
+bash ./compile.sh
+
 for filename in `ls`
 do
   if test -d $filename ; then
