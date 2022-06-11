@@ -10,7 +10,10 @@ NUM_JOBS=( 1 )
 FILE_SYSTEMS=( "Original" "Region-based" "Fine-grained"  )
 TIMERS=( "aging_amount.sh" "aging_amount.sh" "aging_amount.sh" )
 BRANCHES=( "original" "master" "entry-based" )
-
+PMEM_ID=0x0020
+if $1; then
+    PMEM_ID=$1
+fi
 
 AGING_RATIO=(50)
 
@@ -26,7 +29,7 @@ for job in "${NUM_JOBS[@]}"; do
             for fsize in "${FILE_SIZE[@]}"; do
                 TIMER=${TIMERS[$STEP]}
                 
-                OUTPUT=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M 0 "${BRANCHES[$STEP]}" "$fsize" "$age" "0x20")
+                OUTPUT=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M 0 "${BRANCHES[$STEP]}" "$fsize" "$age" "$PMEM_ID")
               
                 READS=$(echo "$OUTPUT" | grep MediaReads | awk '{print $2}')
                 WRITES=$(echo "$OUTPUT" | grep MediaWrites | awk '{print $2}')

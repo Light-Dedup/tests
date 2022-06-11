@@ -12,6 +12,10 @@ FILE_SYSTEMS=( "Volatile-FP" "Single-Allocator" "Percore-Allocator" )
 TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
 BRANCHES=( "volatile-fpentry" "serial-seq" "master" )
 TABLE_NAME="$ABS_PATH/table"
+PMEM_ID=0x0020
+if $1; then
+    PMEM_ID=$1
+fi
 
 table_create "$TABLE_NAME" "file_system file_size num_job read write t"
 
@@ -23,7 +27,7 @@ for job in "${NUM_JOBS[@]}"; do
             TIMER=${TIMERS[$STEP]}
             
             bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
-            OUTPUT=$(bash ../../nvm_tools/percore_amount.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" 0x20)
+            OUTPUT=$(bash ../../nvm_tools/percore_amount.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" "$PMEM_ID")
             SECOND_TIME=$(echo "$OUTPUT" | grep SecondTime | awk '{print $2}')
             SECOND_READ=$(echo "$OUTPUT" | grep SecondRead | awk '{print $2}')
             SECOND_WRITE=$(echo "$OUTPUT" | grep SecondWrite | awk '{print $2}')

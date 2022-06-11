@@ -13,6 +13,13 @@ TABLE_NAME="$ABS_PATH/performance-comparison-table"
 table_create "$TABLE_NAME" "file_system num_job first_bw second_bw"
 
 STEP=0
+
+# warm up SSD
+bash ../../nvm_tools/"${SETUPS[$STEP]}" "${BRANCHES[$STEP]}" "0"
+BW1=$(bash ./mcp.sh "/usr/src/linux-nova-master" "/mnt/pmem0/src-linux-1" "0")
+BW2=$(bash ./mcp.sh "/usr/src/linux-nova-master" "/mnt/pmem0/src-linux-2" "0")
+
+# start test
 for file_system in "${FILE_SYSTEMS[@]}"; do
     for job in "${NUM_JOBS[@]}"; do
 

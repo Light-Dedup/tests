@@ -18,6 +18,11 @@ TABLE_NAME_SECOND="$ABS_PATH/second-table-simple-random"
 table_create "$TABLE_NAME_FIRST" "file_system file_size num_job read write t"
 table_create "$TABLE_NAME_SECOND" "file_system file_size num_job read write t"
 
+PMEM_ID=0x0020
+if $1; then
+    PMEM_ID=$1
+fi
+
 for job in "${NUM_JOBS[@]}"; do
     STEP=0
     for file_system in "${FILE_SYSTEMS[@]}"; do
@@ -26,7 +31,7 @@ for job in "${NUM_JOBS[@]}"; do
             TIMER=${TIMERS[$STEP]}
 
             bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
-            OUTPUT=$(bash ../../nvm_tools/percore_amount_simple_random.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" 0x20)
+            OUTPUT=$(bash ../../nvm_tools/percore_amount_simple_random.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" "$PMEM_ID")
             FIRST_TIME=$(echo "$OUTPUT" | grep FirstTime | awk '{print $2}')
             FIRST_READ=$(echo "$OUTPUT" | grep FirstRead | awk '{print $2}')
             FIRST_WRITE=$(echo "$OUTPUT" | grep FirstWrite | awk '{print $2}')
