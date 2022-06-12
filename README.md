@@ -1,4 +1,14 @@
-# Test scripts usages for Light-Dedup
+Test scripts for Light-Dedup.
+
+## Hardware prerequisites
+
+### Server with NVMs
+
+A server with at least one NVM equipped (256GiB). Note that if the user wants to reproduce the interleaved performance of Light-Dedup in Section Discussion (Figure 11), at least two NVMs are required.
+
+### Sufficient memory
+
+Reproducing experiments requires much memory because caching the compiled Linux kernel source code (Figure 6: Microbenchmark with copying compiled kernel source code) requires about 15--20 GiB (depending on the configuration), and the operating system itself and Light-Dedup all require significant memory usage.
 
 ## One-click "run_all.sh"
 
