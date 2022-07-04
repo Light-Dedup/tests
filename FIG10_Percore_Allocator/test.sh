@@ -13,7 +13,7 @@ TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
 BRANCHES=( "volatile-fpentry" "serial-seq" "master" )
 TABLE_NAME="$ABS_PATH/table"
 PMEM_ID=0x0020
-if $1; then
+if [ $1 ]; then
     PMEM_ID=$1
 fi
 

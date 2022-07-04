@@ -11,7 +11,7 @@ FILE_SYSTEMS=( "Original" "Region-based" "Fine-grained"  )
 TIMERS=( "aging_amount.sh" "aging_amount.sh" "aging_amount.sh" )
 BRANCHES=( "original" "master" "entry-based" )
 PMEM_ID=0x0020
-if $1; then
+if [ $1 ]; then
     PMEM_ID=$1
 fi
 

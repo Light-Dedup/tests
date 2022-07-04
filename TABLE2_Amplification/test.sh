@@ -19,7 +19,7 @@ table_create "$TABLE_NAME_FIRST" "file_system file_size num_job read write t"
 table_create "$TABLE_NAME_SECOND" "file_system file_size num_job read write t"
 
 PMEM_ID=0x0020
-if $1; then
+if [ $1 ]; then
     PMEM_ID=$1
 fi
 
