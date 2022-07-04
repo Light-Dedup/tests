@@ -28,11 +28,11 @@ do
 
     # Set pmem0 id
     if [[ "${filename}" == "FIG10_Percore_Allocator" ]]; then
-      test.sh "$PMEM_ID" > $OUTNAME
+      bash test.sh "$PMEM_ID" > $OUTNAME
     elif [[ "${filename}" == "TABLE2_Amplification" ]]; then
-      test.sh "$PMEM_ID" > $OUTNAME
+      bash test.sh "$PMEM_ID" > $OUTNAME
     elif [[ "${filename}" == "TABLE4_AgingSystem" ]]; then
-      test.sh "$PMEM_ID" > $OUTNAME
+      bash test.sh "$PMEM_ID" > $OUTNAME
     else    
       bash test.sh > $OUTNAME
     fi
