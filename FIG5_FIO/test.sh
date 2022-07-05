@@ -17,21 +17,28 @@ BRANCHES=( "master" "sha256" "master" "original" )
 TABLE_NAME="$ABS_PATH/performance-comparison-table"
 table_create "$TABLE_NAME" "file_system dup_rate num_job bandwidth(MiB/s)"
 
-for dup_rate in "${DUP_RATES[@]}"; do
-    STEP=0
-    for file_system in "${FILE_SYSTEMS[@]}"; do
-        for fsize in "${FILE_SIZE[@]}"; do
-            for job in "${NUM_JOBS[@]}"; do
-                EACH_SIZE=$(split_workset "$fsize" "$job")
-                TIMER=${TIMERS[$STEP]}
+loop=1
+if [ "$1" ]; then
+    loop=$1
+fi
 
-                BW=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M "$dup_rate" "${BRANCHES[$STEP]}" "0" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
-                
-                table_add_row "$TABLE_NAME" "$file_system $dup_rate $job $BW"     
+for ((i=1; i <= loop; i++))
+do
+    for dup_rate in "${DUP_RATES[@]}"; do
+        STEP=0
+        for file_system in "${FILE_SYSTEMS[@]}"; do
+            for fsize in "${FILE_SIZE[@]}"; do
+                for job in "${NUM_JOBS[@]}"; do
+                    EACH_SIZE=$(split_workset "$fsize" "$job")
+                    TIMER=${TIMERS[$STEP]}
+
+                    BW=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M "$dup_rate" "${BRANCHES[$STEP]}" "0" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
+                    
+                    table_add_row "$TABLE_NAME" "$file_system $dup_rate $job $BW"     
+                done
             done
+            STEP=$((STEP + 1))
         done
-        STEP=$((STEP + 1))
     done
 done
-
 

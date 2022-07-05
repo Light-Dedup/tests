@@ -19,34 +19,42 @@ table_create "$TABLE_NAME_FIRST" "file_system file_size num_job read write t"
 table_create "$TABLE_NAME_SECOND" "file_system file_size num_job read write t"
 
 PMEM_ID=0x0020
-if [ $1 ]; then
+if [ "$1" ]; then
     PMEM_ID=$1
 fi
 
-for job in "${NUM_JOBS[@]}"; do
-    STEP=0
-    for file_system in "${FILE_SYSTEMS[@]}"; do
-        for fsize in "${FILE_SIZE[@]}"; do
-            EACH_SIZE=$(split_workset "$fsize" "$job")
-            TIMER=${TIMERS[$STEP]}
+loop=1
+if [ "$2" ]; then
+    loop=$2
+fi
 
-            bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
-            OUTPUT=$(bash ../../nvm_tools/percore_amount_simple_random.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" "$PMEM_ID")
-            FIRST_TIME=$(echo "$OUTPUT" | grep FirstTime | awk '{print $2}')
-            FIRST_READ=$(echo "$OUTPUT" | grep FirstRead | awk '{print $2}')
-            FIRST_WRITE=$(echo "$OUTPUT" | grep FirstWrite | awk '{print $2}')
-            SECOND_TIME=$(echo "$OUTPUT" | grep SecondTime | awk '{print $2}')
-            SECOND_READ=$(echo "$OUTPUT" | grep SecondRead | awk '{print $2}')
-            SECOND_WRITE=$(echo "$OUTPUT" | grep SecondWrite | awk '{print $2}')
+for ((i=1; i <= loop; i++))
+do
+    for job in "${NUM_JOBS[@]}"; do
+        STEP=0
+        for file_system in "${FILE_SYSTEMS[@]}"; do
+            for fsize in "${FILE_SIZE[@]}"; do
+                EACH_SIZE=$(split_workset "$fsize" "$job")
+                TIMER=${TIMERS[$STEP]}
+
+                bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
+                OUTPUT=$(bash ../../nvm_tools/percore_amount_simple_random.sh "/mnt/pmem0" "$job" "${EACH_SIZE}" "$PMEM_ID")
+                FIRST_TIME=$(echo "$OUTPUT" | grep FirstTime | awk '{print $2}')
+                FIRST_READ=$(echo "$OUTPUT" | grep FirstRead | awk '{print $2}')
+                FIRST_WRITE=$(echo "$OUTPUT" | grep FirstWrite | awk '{print $2}')
+                SECOND_TIME=$(echo "$OUTPUT" | grep SecondTime | awk '{print $2}')
+                SECOND_READ=$(echo "$OUTPUT" | grep SecondRead | awk '{print $2}')
+                SECOND_WRITE=$(echo "$OUTPUT" | grep SecondWrite | awk '{print $2}')
 
 
-            table_add_row "$TABLE_NAME_FIRST" "$file_system $fsize $job $FIRST_READ $FIRST_WRITE $FIRST_TIME"
+                table_add_row "$TABLE_NAME_FIRST" "$file_system $fsize $job $FIRST_READ $FIRST_WRITE $FIRST_TIME"
 
-            table_add_row "$TABLE_NAME_SECOND" "$file_system $fsize $job $SECOND_READ $SECOND_WRITE $SECOND_TIME"
+                table_add_row "$TABLE_NAME_SECOND" "$file_system $fsize $job $SECOND_READ $SECOND_WRITE $SECOND_TIME"
 
+            done
+            STEP=$((STEP + 1))
         done
-        STEP=$((STEP + 1))
-    done
+    done 
 done 
 
 

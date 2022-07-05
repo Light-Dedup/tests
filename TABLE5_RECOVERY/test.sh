@@ -14,22 +14,29 @@ BRANCHES=( "master" "failure-recovery" "original" "failure-recovery-original" )
 TABLE_NAME="$ABS_PATH/performance-comparison-table"
 table_create "$TABLE_NAME" "file_system file_size umount_time recovery"
 
-STEP=0
-for file_system in "${FILE_SYSTEMS[@]}"; do
-    for fsize in "${FILE_SIZE[@]}"; do
-        for job in "${NUM_JOBS[@]}"; do
-            EACH_SIZE=$(split_workset "$fsize" "$job")
-            TIMER=${TIMERS[$STEP]}
+loop=1
+if [ "$1" ]; then
+    loop=$1
+fi
 
-            bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
-            _=$(bash ../../nvm_tools/helper/fio.sh "$job" "${EACH_SIZE}"M 0)
-            UMOUNT_TIME=$( (time sudo umount /mnt/pmem0) 2>&1 | grep real | awk '{print $2}' )
-            RECOVERY_TIME=$( (time sudo mount -t NOVA -o wprotect,data_cow /dev/pmem0 /mnt/pmem0) 2>&1 | grep real | awk '{print $2}' )
+for ((i=1; i <= loop; i++))
+do
+    STEP=0
+    for file_system in "${FILE_SYSTEMS[@]}"; do
+        for fsize in "${FILE_SIZE[@]}"; do
+            for job in "${NUM_JOBS[@]}"; do
+                EACH_SIZE=$(split_workset "$fsize" "$job")
+                TIMER=${TIMERS[$STEP]}
 
-            table_add_row "$TABLE_NAME" "$file_system $fsize $UMOUNT_TIME $RECOVERY_TIME"
+                bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
+                _=$(bash ../../nvm_tools/helper/fio.sh "$job" "${EACH_SIZE}"M 0)
+                UMOUNT_TIME=$( (time sudo umount /mnt/pmem0) 2>&1 | grep real | awk '{print $2}' )
+                RECOVERY_TIME=$( (time sudo mount -t NOVA -o wprotect,data_cow /dev/pmem0 /mnt/pmem0) 2>&1 | grep real | awk '{print $2}' )
+
+                table_add_row "$TABLE_NAME" "$file_system $fsize $UMOUNT_TIME $RECOVERY_TIME"
+            done
         done
+        STEP=$((STEP + 1))
     done
-    STEP=$((STEP + 1))
 done
-
 
