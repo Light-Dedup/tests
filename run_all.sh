@@ -29,29 +29,29 @@ fi
 for filename in `ls`
 do
   if test -d "$filename" ; then
+
+    if ( echo "$filename" | grep -q "Deprecated" ); then 
+      continue
+    fi
+    echo "$filename"
     cd "$filename" || exit
 
-    # # Set pmem0 id
-    # if [[ "${filename}" == "FIG10_Percore_Allocator" ]]; then
-    #   bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
-    # elif [[ "${filename}" == "TABLE2_Amplification" ]]; then
-    #   bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
-    # elif [[ "${filename}" == "TABLE4_AgingSystem" ]]; then
-    #   bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
-    # else    
-    #   bash test.sh "$loop" > $OUTNAME
-    # fi
-
-    # # Run Process Script
-    # if [ -f "process.py" ]; then
-    #     python3 process.py
-    # fi
-
-    if [[ "${filename}" == "TABLE4_AgingSystem" ]]; then
+    # Set pmem0 id
+    if [[ "${filename}" == "FIG10_Percore_Allocator" ]]; then
       bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
-    elif [[ "${filename}" == "TABLE5_RECOVERY" ]]; then
+    elif [[ "${filename}" == "TABLE2_Amplification" ]]; then
+      bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
+    elif [[ "${filename}" == "TABLE4_AgingSystem" ]]; then
+      bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
+    else    
       bash test.sh "$loop" > $OUTNAME
-    fi  
+    fi
+
+    # Run Process Script
+    if [ -f "process.py" ]; then
+        python3 process.py
+    fi
+
     cd - || exit
   fi
 done
