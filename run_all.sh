@@ -33,7 +33,11 @@ do
     if ( echo "$filename" | grep -q "Deprecated" ); then 
       continue
     fi
-    echo "$filename"
+
+    if ( echo "$filename" | grep -q "Finished" ); then 
+      continue
+    fi
+
     cd "$filename" || exit
 
     # Set pmem0 id
