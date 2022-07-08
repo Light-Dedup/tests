@@ -1,4 +1,4 @@
-file_bench file_system iops block
+file_system file_bench iops block
 Light-Dedup	fileserver.f	405771.3884	1834
 Light-Dedup(SHA256)	fileserver.f	149230.615	1723
 NV-Dedup	fileserver.f	171727.617	1808

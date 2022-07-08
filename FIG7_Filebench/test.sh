@@ -36,7 +36,7 @@ do
 
             iops=$(filebench_attr_iops "$ABS_PATH"/M_DATA/"$file_bench"-"$file_system")
         
-            table_add_row "$TABLE_NAME" "$file_system $file_bench $iops $((block_end - block_start))"     
+            table_add_row "$TABLE_NAME" "$file_bench $file_system $iops $((block_end - block_start))"     
             STEP=$((STEP + 1))
         done
     done
