@@ -1,6 +1,0 @@
-file_system num_job first_bw second_bw
-NV-Dedup 1 643.8 366.2
-NV-Dedup 2 1061.2 630.6
-NV-Dedup 4 1372.2 1002
-NV-Dedup 8 1304.8 1391.6
-NV-Dedup 16 1206.2 1457.2
