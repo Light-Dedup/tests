@@ -7,13 +7,16 @@ mkdir -p "$ABS_PATH"/M_DATA
 FILE_SIZE=( $((64 * 1024)) ) # 128 * 1024
 NUM_JOBS=( 1 2 4 8 16 )
 
-FILE_SYSTEMS=( "Prefetch-Next+Speculation" "Prefetch-Next" "Speculation" "Prefetch-Current" "Naive")
-TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "master" "no-speculation" "no-prefetch" "prefetch-current" "no-prefetch-speculation" )
+# FILE_SYSTEMS=( "Prefetch-Next+Speculation" "Prefetch-Next" "Speculation" "Prefetch-Current" "Naive")
+# TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
+# BRANCHES=( "master" "no-speculation" "no-prefetch" "prefetch-current" "no-prefetch-speculation" )
 
+FILE_SYSTEMS=( "Speculative-Prefetch" "Naive")
+TIMERS=( "setup_nova.sh" "setup_nova.sh" )
+BRANCHES=( "master" "no-prefetch-speculation" )
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table"
-table_create "$TABLE_NAME" "file_system num_job first_bandwidth(MiB/s) second_bandwidth(MiB/s) second_cmp_lat(ns) second_fp_lat(ns) second_others_lat(ns) second_lat(ns)"
+table_create "$TABLE_NAME" "file_system num_job first_bandwidth(MiB/s) second_bandwidth(MiB/s) second_cmp_lat(ns) second_fp_lat(ns) second_prefetch_next_stage1_lat(ns) second_prefetch_next_stage2_lat(ns) second_prefetch_cmp_lat(ns) second_prefetch_lat(ns) second_others_lat(ns) second_lat(ns)"
 
 loop=1
 if [ "$1" ]; then
@@ -44,10 +47,17 @@ do
                 fp_time=$(nova_attr_time_stats "fp_calc" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
                 cmp_time=$(nova_attr_time_stats "memcmp" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
                 cmp_user=$(nova_attr_time_stats "cmp_user" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
+                prefetch_next_stage1=$(nova_attr_time_stats "prefetch_next_stage_1" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
+                prefetch_next_stage1=$((prefetch_next_stage1))
+                prefetch_next_stage2=$(nova_attr_time_stats "prefetch_next_stage_2" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
+                prefetch_next_stage2=$((prefetch_next_stage1))
+                prefetch_cmp=$(nova_attr_time_stats "prefetch_cmp" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
+                prefetch_cmp=$((prefetch_cmp))
+                prefetch_time=$((prefetch_next_stage1 + prefetch_next_stage2 + prefetch_cmp))
                 cmp_time=$((cmp_time + cmp_user)) 
-                others=$((whole_time - fp_time - cmp_time))
+                others=$((whole_time - fp_time - cmp_time - prefetch_time))
                 
-                table_add_row "$TABLE_NAME" "$file_system $job $BW1 $BW2 $cmp_time $fp_time $others $whole_time"     
+                table_add_row "$TABLE_NAME" "$file_system $job $BW1 $BW2 $cmp_time $fp_time $prefetch_next_stage1 $prefetch_next_stage2 $prefetch_cmp $prefetch_time $others $whole_time"     
             done
         done
         STEP=$((STEP + 1))
