@@ -17,7 +17,6 @@ CLR_END="\033[0m"
 M_DATA="DATA"
 #!SECTION
 
-
 #SECTION: TABLE
 function table_create () {
     local TABLE_NAME
