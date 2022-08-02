@@ -8,7 +8,7 @@ FILE_SIZE=( $((64 * 1024)) ) # 128 * 1024
 NUM_JOBS=( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 )
 
 # Multi Threads
-FILE_SYSTEMS=( "Speculation-No-Calc" "Prefetch-Next" "Transition" )
+FILE_SYSTEMS=( "Speculation-64" "Prefetch-Next" "Transition" )
 TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
 BRANCHES=( "no-prefetch" "no-transition" "master")
 

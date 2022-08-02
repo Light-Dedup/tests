@@ -8,9 +8,9 @@ FILE_SIZE=( $((64 * 1024)) ) # 128 * 1024
 NUM_JOBS=( 1 )
 
 # Single Thread with Breakdown
-FILE_SYSTEMS=( "Naive" "Prefetch-Current-Parallel-Calc" "Speculation-No-Calc" "Prefetch-Next" )
-TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "no-prefetch-speculation" "prefetch-current" "no-prefetch" "no-transition" )
+FILE_SYSTEMS=( "Naive" "Prefetch-Cmp-64" "Prefetch-Cmp-256-64" "Prefetch-Current" "Speculation" "Prefetch-Next" )
+TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
+BRANCHES=( "no-prefetch-speculation-precmp" "no-prefetch-speculation-precmp_256B" "no-prefetch-speculation" "prefetch-current" "speculation" "no-transition" )
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table-single"
 table_create "$TABLE_NAME" "file_system num_job first_bandwidth(MiB/s) second_bandwidth(MiB/s) second_cmp_lat(ns) second_fp_lat(ns) second_prefetch_lat(ns) second_lookup_lat(ns) second_others_lat(ns) second_lat(ns)"

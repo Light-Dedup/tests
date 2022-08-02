@@ -7,8 +7,10 @@ FILE_SIZE=( 4096 )
 NUM_JOBS=( 1 )
 mkdir -p "$ABS_PATH"/M_DATA
 TABLE_NAME="$ABS_PATH/breakdown-table"
+VERSIONS="$ABS_PATH/versions"
 
 table_create "$TABLE_NAME" "system whole_time fp_time IO_time cmp_time others bw" 
+table_create "$VERSIONS" "system version" 
 
 loop=1
 if [ "$1" ]; then
@@ -24,23 +26,24 @@ do
             sudo dmesg -C
 
             # original-first
-            bash ../../nvm_tools/setup_nova.sh "original" "1"
-            BW=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=4K -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
+            VER1=$(bash ../../nvm_tools/setup_nova.sh "original" "1" | grep "COMMITID" | sed 's/COMMITID: //g')
+            BW=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=2M -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
 
             cat /proc/fs/NOVA/pmem0/timing_stats > "$OUTPUT-NOVA"
 
             whole_time=$(( 4 * 1000 * 1000 * 1000 / (BW * 1024) )) 
             io_time=$(nova_attr_average_stats "memcpy_write_nvmm" "$OUTPUT-NOVA")
-            # io_time=$((io_time/512)) 
+            io_time=$((io_time/512)) 
             fp_time=0
             cmp_time=0
             others=$((whole_time - io_time - fp_time - cmp_time))
             
             table_add_row "$TABLE_NAME" "NOVA $whole_time $fp_time $io_time $cmp_time $others $BW"     
+            table_add_row "$VERSIONS" "NOVA $VER1 "          
 
-            # no-speculation-first
-            bash ../../nvm_tools/setup_nova.sh "no-speculation" "1"
-            BW=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=4K -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
+            # no-prefetch-speculation-first
+            VER2=$(bash ../../nvm_tools/setup_nova.sh "no-prefetch-speculation-precmp" "1" | grep "COMMITID" | sed 's/COMMITID: //g')
+            BW=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=2M -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
 
             cat /proc/fs/NOVA/pmem0/timing_stats > "$OUTPUT-NO-SPECULATION-1"
 
@@ -52,9 +55,9 @@ do
             
             table_add_row "$TABLE_NAME" "NO-SPECULATION-First $whole_time $fp_time $io_time $cmp_time $others $BW"          
             
-            # no-speculation-second
+            # no-prefetch-speculation-second
             echo 1 > /proc/fs/NOVA/pmem0/timing_stats  
-            BW=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=4K -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
+            BW=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=2M -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
 
             cat /proc/fs/NOVA/pmem0/timing_stats > "$OUTPUT-NO-SPECULATION-2"
 
@@ -64,7 +67,8 @@ do
             cmp_time=$(nova_attr_average_stats "memcmp" "$OUTPUT-NO-SPECULATION-2")
             others=$((whole_time - io_time - fp_time - cmp_time))
             
-            table_add_row "$TABLE_NAME" "NO-SPECULATION-Second $whole_time $fp_time $io_time $cmp_time $others $BW"          
+            table_add_row "$TABLE_NAME" "NO-SPECULATION-Second $whole_time $fp_time $io_time $cmp_time $others $BW"
+            table_add_row "$VERSIONS" "NO-PREFETCH-SPECULTAION $VER2"          
         done
     done
 done

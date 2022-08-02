@@ -27,9 +27,23 @@ def process_table(table:str, writer):
                 file_size = 64
             return (int(row[type]) - int(base[type])) / (file_size * 1024 * 256) / 32
         
-        writer.writerow([table_alias(table), "Region", calc_amp(table, base, region, "read"), calc_amp(table, base, region, "write"), region["bw"], 1000000 * float(region["lat"])])
+        def calc_bw(table, row):
+            if table == "newly_table":
+                file_size = 128
+            elif table == "aging_table":
+                file_size = 64
+            return (file_size * 1024) / (float(row['time']) / 1000)
+        
+        def calc_lat(table, row):
+            if table == "newly_table":
+                file_size = 128
+            elif table == "aging_table":
+                file_size = 64
+            return (float(row['time']) * 1000 * 1000) / (file_size * 1024 * 256) 
 
-        writer.writerow([table_alias(table), "Entry", calc_amp(table, base, entry, "read"), calc_amp(table, base, entry, "write"), entry["bw"], 1000000 * float(entry["lat"])])
+        writer.writerow([table_alias(table), "Region", calc_amp(table, base, region, "read"), calc_amp(table, base, region, "write"), calc_bw(table, region), calc_lat(table, region)])
+
+        writer.writerow([table_alias(table), "Entry", calc_amp(table, base, entry, "read"), calc_amp(table, base, entry, "write"), calc_bw(table, entry), calc_lat(table, entry)])
         
 with open(output_table, 'w') as o_f:
     writer = csv.writer(o_f, delimiter=' ')
