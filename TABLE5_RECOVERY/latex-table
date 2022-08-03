@@ -8,7 +8,7 @@
       \hline
       \multirow{2}*{Umount Time (s)} & NOVA & 0.39 & 0.772 & 1.471 \\
       \cline{2-5} ~ & Light-Dedup &  
-      {Light-Dedup-UMOUNT-32} & {Light-Dedup-UMOUNT-64} & {Light-Dedup-UMOUNT-128} \\
+      1.395 & 2.768 & 5.56 \\
       \hline
       \multirow{2}*{\makecell[c]{Normal Recovery\\ Time (s)}} & NOVA & 0.015 & 0.014 & 0.015 \\
       \cline{2-5} ~ & Light-Dedup &  

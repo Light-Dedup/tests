@@ -18,7 +18,7 @@ def replace(a, b):
     cmd = "sed -i 's/{}/{}/g' latex-table > /dev/null".format(a, b)
     os.system(cmd)
 
-targets = [("NOVA-FAIL", NOVA_FAIL), ("NOVA-NORMAL", NOVA_NORMAL), ("Light-Dedup-NORMAL", LIGHT_DEDUP_NORMAL), ("Light-Dedup-FAIL", LIGHT_DEDUP_FAIL), ("NOVA-UMOUNT", NOVA_NORMAL), ("Light-Dedup-FAIL", LIGHT_DEDUP_NORMAL)]
+targets = [("NOVA-FAIL", NOVA_FAIL), ("NOVA-NORMAL", NOVA_NORMAL), ("Light-Dedup-NORMAL", LIGHT_DEDUP_NORMAL), ("Light-Dedup-FAIL", LIGHT_DEDUP_FAIL), ("NOVA-UMOUNT", NOVA_NORMAL), ("Light-Dedup-UMOUNT", LIGHT_DEDUP_NORMAL)]
 
 for target in targets:
     for idx, size in enumerate(["32", "64", "128"]):
