@@ -1,0 +1,21 @@
+\begin{table}[t]
+  \centering
+  \resizebox{\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      \multirow{2}*{Approaches}       &
+      \multicolumn{2}{c|}{First Write} &
+      \multicolumn{2}{c|}{Second Write}                                                   \\
+      \cline{2-5}                     & Read (B)    & Write (B) & Read (B) & Write (B)   \\
+      \hline
+      ideal                           & $\approx$32 & 32        & 32       & $\approx$32 \\
+      \hline
+      All-in-NVM                      & {FIRST-READ}       & {FIRST-WRITE}     & {SECOND-READ}    & {SECOND-WRITE}       \\
+      \hline
+      Entry-based                     & (TODO)       & (TODO)     & (TODO)   & (TODO)      \\
+      \hline
+    \end{tabular}
+  }
+  \caption{The average NVM extra reads/writes of deduplication metadata for writing each block.}
+  \label{tab2_amplification}
+\end{table}

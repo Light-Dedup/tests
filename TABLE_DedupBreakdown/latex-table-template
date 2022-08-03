@@ -1,0 +1,15 @@
+\begin{table}[t]
+  \centering
+  \resizebox{\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      \multirow{2}{*}{System} & \multicolumn{2}{c|}{Calc. Lat (ns)} & \multicolumn{2}{c|}{I/O Lat (ns)} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Bandwidth\\(MiB/s)\end{tabular}} \\ \cline{2-5}
+       & fp & others & write & cmp &  \\ \hline
+      NOVA & {NOVA-FP} & {NOVA-OTHERS} & {NOVA-WRITE} & {NOVA-CMP} & {NOVA-BW} \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Naive (1st)\end{tabular} & {NAIVE-1-FP} & {NAIVE-1-OTHERS} & \textbf{{NAIVE-1-WRITE}} & {NAIVE-1-CMP} & {NAIVE-1-BW} \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Naive (2nd)\end{tabular} & {NAIVE-2-FP} & {NAIVE-2-OTHERS} & {NAIVE-2-WRITE} & \textbf{{NAIVE-2-CMP}} & {NAIVE-2-BW} \\ \hline
+    \end{tabular}
+  }
+  \caption{The breakdown latency of deduplication for each 4KiB block (4KiB is deduplication granularity).}
+  \label{tab_dedupbreakdown}
+\end{table}
