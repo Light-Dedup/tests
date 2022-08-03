@@ -51,6 +51,11 @@ do
       bash test.sh "$loop" > $OUTNAME
     fi
 
+    # Aggregate Results
+    if [ -f "agg.sh" ]; then
+        bash agg.sh "$loop"
+    fi
+
     # Run Process Script
     if [ -f "process.py" ]; then
         python3 process.py
