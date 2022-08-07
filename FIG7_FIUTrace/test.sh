@@ -10,10 +10,11 @@ NUM_JOBS=( 1 2 4 8 16 )
 
 
 FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
-TIMERS=( "fio_nova.sh" "fio_nova.sh" "fio_nvdedup.sh" "fio_nova.sh" )
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
 BRANCHES=( "master" "sha256" "master" "original" )
-TRACES=( "homes-sample.blkparse" "mail-01-sample.blkparse" "web-vm-sample.blkparse" )
-
+TRACES_PREFIXS=( "homes-110108-112108" "webmail+online.cs.fiu.edu-110108-113008" "cheetah.cs.fiu.edu-110108-113008" )
+TRACES_RANGE_START=( 1 1 1 )
+TRACES_RANGE_END=( 21 21 2)
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table"
 table_create "$TABLE_NAME" "file_system trace bandwidth(MiB/s)"
@@ -25,21 +26,20 @@ fi
 
 for ((i=1; i <= loop; i++))
 do
-    for dup_rate in "${DUP_RATES[@]}"; do
-        STEP=0
-        for file_system in "${FILE_SYSTEMS[@]}"; do
-            for fsize in "${FILE_SIZE[@]}"; do
-                for job in "${NUM_JOBS[@]}"; do
-                    EACH_SIZE=$(split_workset "$fsize" "$job")
-                    TIMER=${TIMERS[$STEP]}
+    STEP=0
+    for file_system in "${FILE_SYSTEMS[@]}"; do
+        TRACE_STEP=0
+        for TRACES_PREFIX in "${TRACES_PREFIXS[@]}"; do
+            bash ../../nvm_tools/"${SETUPS[$STEP]}" "${BRANCHES[$STEP]}" "0"
+            RANGE_START=${TRACES_RANGE_START[$TRACE_STEP]}
+            RANGE_END=${TRACES_RANGE_END[$TRACE_STEP]}
 
-                    BW=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M "$dup_rate" "${BRANCHES[$STEP]}" "0" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
-                    
-                    table_add_row "$TABLE_NAME" "$file_system $dup_rate $job $BW"     
-                done
-            done
-            STEP=$((STEP + 1))
+            BW=$(python3 ./replay.py /home/deadpool/Downloads/FIU_Traces/"$TRACES_PREFIX".\$n.blkparse "$RANGE_START" "$RANGE_END" | grep "Replay Bandwidth" | awk '{print $3}')
+            
+            table_add_row "$TABLE_NAME" "$file_system $TRACES_PREFIX $BW"  
+            TRACE_STEP=$((TRACE_STEP + 1))
         done
+        STEP=$((STEP + 1))
     done
 done
 

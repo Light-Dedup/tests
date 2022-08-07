@@ -2,23 +2,35 @@
 
 import sys
 
-trace = sys.argv[1]
+
+trace_pattern = sys.argv[1]
+trace_start = int(sys.argv[2])
+trace_end = int(sys.argv[3])
+
 hash_map = dict()
 
 tot_wblks = 0
 unique_wblks = 0
 tot_blks = 0
-with open(trace, "r") as f:
-    lines = f.readlines()
-    for line in lines:
-        [ts, pid, process, lba, blks, rw, major, minor, md5] = line.split(" ")
-        if rw == "W":
-            if md5 not in hash_map:
-                hash_map[md5] = 1
-            else:
-                hash_map[md5] += 1
-            tot_wblks += 1
-        tot_blks += 1
+
+for i in range(trace_start, trace_end + 1):
+    trace = trace_pattern.replace("$n", str(i))
+    print("Processing trace: " + trace)
+    with open(trace, "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            try:
+                [ts, pid, process, lba, blks, rw, major, minor, md5] = line.split(" ")
+                if rw == "W":
+                    if md5 not in hash_map:
+                        hash_map[md5] = 1
+                    else:
+                        hash_map[md5] += 1
+                    tot_wblks += 1
+                tot_blks += 1
+            except:
+                continue
+            
 
 unique_wblks = len(hash_map.items())
 

@@ -1,0 +1,13 @@
+file_system trace bandwidth(MiB/s)
+Light-Dedup homes-110108-112108 939.9264901608443
+Light-Dedup webmail+online.cs.fiu.edu-110108-113008 1206.0233764247316
+Light-Dedup cheetah.cs.fiu.edu-110108-113008 958.86401500028
+Light-Dedup(SHA256) homes-110108-112108 334.74419706414136
+Light-Dedup(SHA256) webmail+online.cs.fiu.edu-110108-113008 452.82783781521283
+Light-Dedup(SHA256) cheetah.cs.fiu.edu-110108-113008 633.9322122347738
+NV-Dedup homes-110108-112108 703.4137090958033
+NV-Dedup webmail+online.cs.fiu.edu-110108-113008 711.4924951969413
+NV-Dedup cheetah.cs.fiu.edu-110108-113008 488.5640410863001
+NOVA homes-110108-112108 1254.5396659843063
+NOVA webmail+online.cs.fiu.edu-110108-113008 1760.92780555602
+NOVA cheetah.cs.fiu.edu-110108-113008 1325.9359513823983
