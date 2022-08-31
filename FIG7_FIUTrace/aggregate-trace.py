@@ -18,7 +18,7 @@ trace_dir = os.path.dirname(trace_pattern)
 if trace_file_path == "":
     trace_file_path = os.path.join(trace_dir, basename(trace_pattern.replace("$n", str(trace_start) + "-" + str(trace_end))))
 
-print("Aggregating trace file to {}...".format(trace_file_path))
+print("Aggregating sparse trace files to {}...".format(trace_file_path))
 
 with open(trace_file_path, "w+") as trace_file:
     for i in range(trace_start, trace_end + 1):
