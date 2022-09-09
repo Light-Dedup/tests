@@ -3,7 +3,8 @@ from traceback import print_tb
 import pandas as pd
 import os
 
-with open("./avg-result-in-paper", "r") as f:
+# with open("./avg-result-in-paper", "r") as f:
+with open("./performance-comparison-table", "r") as f:
     df = pd.read_csv(f, delim_whitespace=True, engine='python')
 
 os.system("echo > latex-table")

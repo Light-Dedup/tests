@@ -6,17 +6,17 @@
       \multirow{2}*{Dimension} & \multirow{2}*{File System} & \multicolumn{3}{c|}{File system utilization (GiB)} \\
       \cline{3-5} & & 32 $\times$ 1 & 32 $\times$ 2 & 32 $\times$ 4 \\
       \hline
-      \multirow{2}*{Umount Time (s)} & NOVA & 0.39 & 0.772 & 1.471 \\
+      \multirow{2}*{Umount Time (s)} & NOVA & 0.391 & 0.773 & 1.505 \\
       \cline{2-5} ~ & Light-Dedup &  
-      1.395 & 2.768 & 5.56 \\
+      1.352 & 2.717 & 5.455 \\
       \hline
-      \multirow{2}*{\makecell[c]{Normal Recovery\\ Time (s)}} & NOVA & 0.015 & 0.014 & 0.015 \\
+      \multirow{2}*{\makecell[c]{Normal Recovery\\ Time (s)}} & NOVA & 0.015 & 0.014 & 0.014 \\
       \cline{2-5} ~ & Light-Dedup &  
-      1.13 & 2.193 & 4.331 \\
+      1.01 & 2.173 & 4.309 \\
       \hline
-      \multirow{2}*{\makecell[c]{Failure Recovery \\ Time (s)}} & NOVA & 0.317 & 0.49 & 0.834 \\
+      \multirow{2}*{\makecell[c]{Failure Recovery \\ Time (s)}} & NOVA & 0.316 & 0.485 & 0.832 \\
       \cline{2-5} ~ & Light-Dedup &  
-      1.267 & 2.429 & 4.623 \\
+      1.256 & 2.371 & 4.645 \\
       \hline
     \end{tabular}
   }

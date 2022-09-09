@@ -109,11 +109,23 @@ plt.xlabel("Data access accumulation")
 plt.yticks(range(0, max(ofs_y) + 1, max(ofs_y) // 5))
 plt.ylabel("Blocks (#.)")
 
+# subfig = plt.subplot(313)
+# consecutive_x = sorted(consecutive_map)
+# consecutive_y = []
+# for consecutive in consecutive_x:
+#     consecutive_y.append(len(consecutive_map[consecutive]))
+# plt.bar(consecutive_x, consecutive_y)
+# # plt.xticks(range(1, len(consecutive_x), len(consecutive_x) // 2 - 1))
+# plt.xlabel("Consecutive Blocks (#.)")
+# plt.yticks(range(0, max(consecutive_y) + 1, max(consecutive_y) // 5))
+# plt.ylabel("Statistics (#.)")
 subfig = plt.subplot(313)
 consecutive_x = sorted(consecutive_map)
 consecutive_y = []
+acc = 0
 for consecutive in consecutive_x:
-    consecutive_y.append(len(consecutive_map[consecutive]))
+    consecutive_y.append(acc + len(consecutive_map[consecutive]))
+    acc += len(consecutive_map[consecutive])
 plt.bar(consecutive_x, consecutive_y)
 # plt.xticks(range(1, len(consecutive_x), len(consecutive_x) // 2 - 1))
 plt.xlabel("Consecutive Blocks (#.)")

@@ -1,0 +1,394 @@
+分支 'volatile-fpentry' 设置为跟踪来自 'origin' 的远程分支 'volatile-fpentry'。
+COMMITID: 3a2d8257d936e17f63ffebb3baffda853cd18664
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+分支 'persistent-bucket' 设置为跟踪来自 'origin' 的远程分支 'persistent-bucket'。
+COMMITID: 588b5ede6ca974c96cbd0988b46839bbfb051e9d
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/volatile-fpentry' 一致。
+COMMITID: 3a2d8257d936e17f63ffebb3baffda853cd18664
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/persistent-bucket' 一致。
+COMMITID: 588b5ede6ca974c96cbd0988b46839bbfb051e9d
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/volatile-fpentry' 一致。
+COMMITID: 3a2d8257d936e17f63ffebb3baffda853cd18664
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/persistent-bucket' 一致。
+COMMITID: 588b5ede6ca974c96cbd0988b46839bbfb051e9d
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/volatile-fpentry' 一致。
+COMMITID: 3a2d8257d936e17f63ffebb3baffda853cd18664
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/persistent-bucket' 一致。
+COMMITID: 588b5ede6ca974c96cbd0988b46839bbfb051e9d
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/volatile-fpentry' 一致。
+COMMITID: 3a2d8257d936e17f63ffebb3baffda853cd18664
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification
+您的分支与上游分支 'origin/persistent-bucket' 一致。
+COMMITID: 588b5ede6ca974c96cbd0988b46839bbfb051e9d
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
+  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
+  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/TABLE2_Amplification

@@ -1,0 +1,176 @@
+=========== NOVA kernel timing stats ===========
+
+================ Initialization ================
+
+init: count 0, timing 0, average 0
+mount: count 0, timing 0, average 0
+ioremap: count 0, timing 0, average 0
+new_init: count 0, timing 0, average 0
+recovery: count 0, timing 0, average 0
+scan_inode_log: count 0, timing 0, average 0
+
+============= Directory operations =============
+
+create: count 109884, timing 655587842, average 5966
+lookup: count 116286, timing 10940165, average 94
+link: count 0, timing 0, average 0
+unlink: count 0, timing 0, average 0
+symlink: count 36, timing 480929, average 13359
+mkdir: count 6366, timing 64127782, average 10073
+rmdir: count 0, timing 0, average 0
+mknod: count 0, timing 0, average 0
+rename: count 0, timing 0, average 0
+readdir: count 0, timing 0, average 0
+add_dentry: count 116286, timing 285719165, average 2457
+remove_dentry: count 0, timing 0, average 0
+setattr: count 0, timing 0, average 0
+setsize: count 0, timing 0, average 0
+
+================ I/O operations ================
+
+dax_read: count 0, timing 0, average 0
+do_cow_write: count 0, timing 0, average 0
+cow_write: count 107847, timing 52704682598, average 488698
+inplace_write: count 0, timing 0, average 0
+copy_to_nvmm: count 0, timing 0, average 0
+dax_get_block: count 0, timing 0, average 0
+read_iter: count 0, timing 0, average 0
+write_iter: count 0, timing 0, average 0
+wrap_iter: count 0, timing 0, average 0
+
+============== Memory operations ===============
+
+memcpy_read_nvmm: count 0, timing 0, average 0
+memcpy_write_nvmm: count 0, timing 0, average 0
+memcpy_write_back_to_nvmm: count 0, timing 0, average 0
+handle_partial_block: count 104689, timing 22720604, average 217
+
+============== Memory management ===============
+
+new_data_blocks: count 36, timing 50039, average 1389
+new_log_blocks: count 111887, timing 11745811, average 104
+free_data_blocks: count 0, timing 0, average 0
+free_log_blocks: count 0, timing 0, average 0
+
+================= Transaction ==================
+
+transaction_new_inode: count 116286, timing 228272032, average 1963
+transaction_link_change: count 0, timing 0, average 0
+update_tail: count 230535, timing 7954163, average 34
+
+============= Logging operations ===============
+
+append_dir_entry: count 116286, timing 263534932, average 2266
+append_file_entry: count 280055, timing 1199461598, average 4282
+append_mmap_entry: count 0, timing 0, average 0
+append_link_change: count 0, timing 0, average 0
+append_setattr: count 0, timing 0, average 0
+append_snapshot_info: count 0, timing 0, average 0
+inplace_update_entry: count 0, timing 0, average 0
+
+=============== Tree operations ================
+
+checking_entry: count 0, timing 0, average 0
+assign_blocks: count 280019, timing 186815375, average 667
+
+============= Garbage collection ===============
+
+log_fast_gc: count 738, timing 3523342, average 4774
+log_thorough_gc: count 0, timing 0, average 0
+check_invalid_log: count 1451, timing 34816, average 23
+
+============ Integrity operations ==============
+
+block_csum: count 0, timing 0, average 0
+block_parity: count 0, timing 0, average 0
+block_csum_parity: count 0, timing 0, average 0
+protect_memcpy: count 0, timing 0, average 0
+protect_file_data: count 0, timing 0, average 0
+verify_entry_csum: count 0, timing 0, average 0
+verify_data_csum: count 0, timing 0, average 0
+calc_entry_csum: count 0, timing 0, average 0
+restore_file_data: count 0, timing 0, average 0
+reset_mapping: count 0, timing 0, average 0
+reset_vma: count 0, timing 0, average 0
+
+================ Miscellaneous =================
+
+find_cache_page: count 0, timing 0, average 0
+fsync: count 0, timing 0, average 0
+write_pages: count 0, timing 0, average 0
+fallocate: count 0, timing 0, average 0
+direct_IO: count 0, timing 0, average 0
+free_old_entry: count 0, timing 0, average 0
+delete_file_tree: count 0, timing 0, average 0
+delete_dir_tree: count 0, timing 0, average 0
+new_vfs_inode: count 116286, timing 103691841, average 891
+new_nova_inode: count 116286, timing 6796890, average 58
+free_inode: count 0, timing 0, average 0
+free_inode_log: count 0, timing 0, average 0
+evict_inode: count 0, timing 0, average 0
+test_perf: count 0, timing 0, average 0
+wprotect: count 2569168, timing 1641235756, average 638
+
+=============== MMap operations ================
+
+mmap_page_fault: count 0, timing 0, average 0
+mmap_pmd_fault: count 0, timing 0, average 0
+mmap_pfn_mkwrite: count 0, timing 0, average 0
+insert_vma: count 0, timing 0, average 0
+remove_vma: count 0, timing 0, average 0
+set_vma_readonly: count 0, timing 0, average 0
+mmap_cow: count 0, timing 0, average 0
+udpate_mapping: count 0, timing 0, average 0
+udpate_pfn: count 0, timing 0, average 0
+mmap_handler: count 0, timing 0, average 0
+
+=================== Rebuild ====================
+
+rebuild_dir: count 6366, timing 10056581, average 1579
+rebuild_file: count 0, timing 0, average 0
+rebuild_snapshot_table: count 0, timing 0, average 0
+
+=================== Snapshot ===================
+
+create_snapshot: count 0, timing 0, average 0
+init_snapshot_info: count 0, timing 0, average 0
+delete_snapshot: count 0, timing 0, average 0
+append_snapshot_filedata: count 0, timing 0, average 0
+append_snapshot_inode: count 0, timing 0, average 0
+
+=================== Fingerprint table ===================
+
+copy_from_user: count 140859, timing 42030487, average 298
+fp_calc: count 140859, timing 57747176, average 409
+incr_ref: count 140859, timing 1685704877, average 11967
+decr_ref: count 0, timing 0, average 0
+memcpy_data_block: count 0, timing 0, average 0
+incr_continuous: count 172619, timing 49256159947, average 285346
+cmp_user: count 3331599, timing 11731210062, average 3521
+hit_incr_ref: count 3327490, timing 123613619, average 37
+update_hint: count 3363660, timing 349637139, average 103
+alloc_region: count 0, timing 0, average 0
+add_valid_count: count 0, timing 0, average 0
+new_region: count 0, timing 0, average 0
+alloc_entry: count 0, timing 0, average 0
+write_new_entry: count 0, timing 0, average 0
+mem_bucket_find: count 140859, timing 125704006, average 892
+index_insert_new_entry: count 0, timing 0, average 0
+memcmp: count 140859, timing 1307736897, average 9284
+prefetch_next_stage_1: count 3210202, timing 4439022927, average 1382
+prefetch_next_stage_2: count 3210202, timing 1281938649, average 399
+prefetch_cmp: count 3331599, timing 29036940941, average 8715
+table_init: count 0, timing 0, average 0
+save_refcount: count 0, timing 0, average 0
+save_entry_allocator: count 0, timing 0, average 0
+normal_recover_fp_table: count 0, timing 0, average 0
+normal_recover_entry_allocator: count 0, timing 0, average 0
+scan_fp_entry_table: count 0, timing 0, average 0
+upsert_fp_entry: count 0, timing 0, average 0
+invalidate_unused_fp_entry: count 0, timing 0, average 0
+
+=================== xatable ===================
+
+xatable_store: count 0, timing 0, average 0
+xatable_load: count 0, timing 0, average 0
+

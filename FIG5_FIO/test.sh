@@ -12,6 +12,9 @@ NUM_JOBS=( 1 2 4 8 16 )
 FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
 TIMERS=( "fio_nova.sh" "fio_nova.sh" "fio_nvdedup.sh" "fio_nova.sh" )
 BRANCHES=( "master" "sha256" "master" "original" )
+# FILE_SYSTEMS=(  "NV-Dedup" "NOVA")
+# TIMERS=(  "fio_nvdedup.sh" "fio_nova.sh" )
+# BRANCHES=( "master" "original" )
 
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table"

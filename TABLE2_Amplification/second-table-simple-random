@@ -1,0 +1,3 @@
+file_system file_size num_job read write t
+Volatile-FP 64 1 68840809216 69997363 28630794600
+Simple-Random 64 1 77592480000 4421923635 29784884177

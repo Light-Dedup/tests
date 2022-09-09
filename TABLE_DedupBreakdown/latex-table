@@ -5,9 +5,9 @@
       \hline
       \multirow{2}{*}{System} & \multicolumn{2}{c|}{Calc. Lat (ns)} & \multicolumn{2}{c|}{I/O Lat (ns)} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Bandwidth\\(MiB/s)\end{tabular}} \\ \cline{2-5}
        & fp & others & write & cmp &  \\ \hline
-      NOVA & 0 & 910 & 1882 & 0 & 1398 \\ \hline
-      \begin{tabular}[c]{@{}c@{}}Naive (1st)\end{tabular} & 295 & 1843 & \textbf{482} & 0 & 1490 \\ \hline
-      \begin{tabular}[c]{@{}c@{}}Naive (2nd)\end{tabular} & 303 & 1317 & 0 & \textbf{3181} & 813 \\ \hline
+      NOVA & 0 & 909 & 1883 & 0 & 1398 \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Naive (1st)\end{tabular} & 293 & 1803 & \textbf{473} & 0 & 1519 \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Naive (2nd)\end{tabular} & 302 & 1304 & 0 & \textbf{3176} & 816 \\ \hline
     \end{tabular}
   }
   \caption{The breakdown latency of deduplication for each 4KiB block (4KiB is deduplication granularity).}

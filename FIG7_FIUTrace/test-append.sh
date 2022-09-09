@@ -5,14 +5,14 @@ source "../common.sh"
 ABS_PATH=$(where_is_script "$0")
 mkdir -p "$ABS_PATH"/M_DATA
 
-FILE_SYSTEMS=( "Light-Dedup-Async" "Light-Dedup" "Light-Dedup(SHA256)" "NOVA" )
-SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "async-deref-dev" "master" "sha256" "original" )
+FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
+BRANCHES=( "master" "sha256" "master" "original" )
 TRACES=( "homes-110108-112108.1-21.blkparse" "webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "cheetah.cs.fiu.edu-110108-113008.1-2.blkparse" )
 MAX_C_BLKS=( 1 512 )
 NUM_JOBS=( 1 2 4 8 16 )
 
-TABLE_NAME="$ABS_PATH/performance-comparison-table"
+TABLE_NAME="$ABS_PATH/performance-comparison-table-append"
 table_create "$TABLE_NAME" "file_system trace cblks job bandwidth(MiB/s)"
 
 loop=1
@@ -31,7 +31,7 @@ do
                     
                     sleep 1
 
-                    BW=$(../../nvm_tools/replay -f /mnt/sdb/FIU_Traces/"$TRACE" -d /mnt/pmem0/ -o rw -g null -t "$job" -c "$cblks" | grep "Bandwidth" | awk '{print $9}')
+                    BW=$(../../nvm_tools/replay -f /mnt/sdb/FIU_Traces/"$TRACE" -d /mnt/pmem0/ -o a -g null -t "$job" -c "$cblks" | grep "Bandwidth" | awk '{print $9}')
                     
                     table_add_row "$TABLE_NAME" "$file_system $TRACE $cblks $job $BW"  
                 done
