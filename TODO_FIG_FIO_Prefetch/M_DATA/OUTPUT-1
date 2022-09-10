@@ -30,7 +30,7 @@ setsize: count 0, timing 0, average 0
 
 dax_read: count 0, timing 0, average 0
 do_cow_write: count 0, timing 0, average 0
-cow_write: count 32768, timing 292574653428, average 8928669
+cow_write: count 32768, timing 291908111211, average 8908328
 inplace_write: count 0, timing 0, average 0
 copy_to_nvmm: count 0, timing 0, average 0
 dax_get_block: count 0, timing 0, average 0
@@ -48,20 +48,20 @@ handle_partial_block: count 0, timing 0, average 0
 ============== Memory management ===============
 
 new_data_blocks: count 0, timing 0, average 0
-new_log_blocks: count 32, timing 53450, average 1670
+new_log_blocks: count 38, timing 57383, average 1510
 free_data_blocks: count 0, timing 0, average 0
-free_log_blocks: count 496, timing 117094, average 236
+free_log_blocks: count 496, timing 127325, average 256
 
 ================= Transaction ==================
 
 transaction_new_inode: count 0, timing 0, average 0
 transaction_link_change: count 0, timing 0, average 0
-update_tail: count 32768, timing 1418338, average 43
+update_tail: count 32768, timing 1268338, average 38
 
 ============= Logging operations ===============
 
 append_dir_entry: count 0, timing 0, average 0
-append_file_entry: count 32768, timing 113774587, average 3472
+append_file_entry: count 32768, timing 119808758, average 3656
 append_mmap_entry: count 0, timing 0, average 0
 append_link_change: count 0, timing 0, average 0
 append_setattr: count 0, timing 0, average 0
@@ -71,13 +71,13 @@ inplace_update_entry: count 0, timing 0, average 0
 =============== Tree operations ================
 
 checking_entry: count 0, timing 0, average 0
-assign_blocks: count 32768, timing 1340991949, average 40923
+assign_blocks: count 32768, timing 1403313855, average 42825
 
 ============= Garbage collection ===============
 
-log_fast_gc: count 16, timing 2952738, average 184546
+log_fast_gc: count 16, timing 3437544, average 214846
 log_thorough_gc: count 0, timing 0, average 0
-check_invalid_log: count 1008, timing 26163, average 25
+check_invalid_log: count 1008, timing 26433, average 26
 
 ============ Integrity operations ==============
 
@@ -100,7 +100,7 @@ fsync: count 0, timing 0, average 0
 write_pages: count 0, timing 0, average 0
 fallocate: count 0, timing 0, average 0
 direct_IO: count 0, timing 0, average 0
-free_old_entry: count 32768, timing 618046551, average 18861
+free_old_entry: count 32768, timing 649148331, average 19810
 delete_file_tree: count 0, timing 0, average 0
 delete_dir_tree: count 0, timing 0, average 0
 new_vfs_inode: count 0, timing 0, average 0
@@ -109,7 +109,7 @@ free_inode: count 0, timing 0, average 0
 free_inode_log: count 0, timing 0, average 0
 evict_inode: count 0, timing 0, average 0
 test_perf: count 0, timing 0, average 0
-wprotect: count 33886272, timing 29138203715, average 859
+wprotect: count 33886284, timing 29221681995, average 862
 
 =============== MMap operations ================
 
@@ -140,23 +140,23 @@ append_snapshot_inode: count 0, timing 0, average 0
 
 =================== Fingerprint table ===================
 
-copy_from_user: count 16777216, timing 31923204466, average 1902
-fp_calc: count 16809984, timing 6847004445, average 407
-incr_ref: count 16777216, timing 256155277967, average 15268
-decr_ref: count 32768, timing 104347902, average 3184
+copy_from_user: count 16777216, timing 31867110267, average 1899
+fp_calc: count 16809984, timing 6839317302, average 406
+incr_ref: count 16777216, timing 255415163770, average 15223
+decr_ref: count 32768, timing 108895317, average 3323
 memcpy_data_block: count 0, timing 0, average 0
-incr_continuous: count 32768, timing 290816460013, average 8875014
+incr_continuous: count 32768, timing 290046338896, average 8851511
 cmp_user: count 0, timing 0, average 0
 hit_incr_ref: count 0, timing 0, average 0
-update_hint: count 16777216, timing 918641004, average 54
+update_hint: count 16777216, timing 918529372, average 54
 alloc_region: count 0, timing 0, average 0
 add_valid_count: count 0, timing 0, average 0
 new_region: count 0, timing 0, average 0
 alloc_entry: count 0, timing 0, average 0
 write_new_entry: count 0, timing 0, average 0
-mem_bucket_find: count 16809984, timing 13706233902, average 815
+mem_bucket_find: count 16809984, timing 13581440996, average 807
 index_insert_new_entry: count 0, timing 0, average 0
-memcmp: count 16777216, timing 203684085574, average 12140
+memcmp: count 16777216, timing 203117291370, average 12106
 prefetch_next_stage_1: count 0, timing 0, average 0
 prefetch_next_stage_2: count 0, timing 0, average 0
 prefetch_cmp: count 0, timing 0, average 0

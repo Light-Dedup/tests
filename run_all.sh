@@ -38,6 +38,10 @@ do
       continue
     fi
 
+    if ( echo "$filename" | grep -q "TODO" ); then 
+      continue
+    fi
+
     cd "$filename" || exit
 
     # Set pmem0 id

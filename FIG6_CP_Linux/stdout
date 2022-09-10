@@ -1,41 +1,34 @@
+M	setup.sh
 您的分支与上游分支 'origin/master' 一致。
 COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/faststr.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/multithread.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/queue.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/master' 一致。
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/master' 一致。
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
 make[1]: 离开目录“/usr/src/linux-nova-master”
 umounting...
 Removing the old kernel module...
@@ -102,315 +95,8 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-分支 'sha256-no-prefetch-speculation' 设置为跟踪来自 'origin' 的远程分支 'sha256-no-prefetch-speculation'。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
 您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
@@ -425,40 +111,32 @@ mounting...
 COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/faststr.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/multithread.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/queue.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/master' 一致。
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/master' 一致。
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
 make[1]: 离开目录“/usr/src/linux-nova-master”
 umounting...
 Removing the old kernel module...
@@ -513,47 +191,8 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
+您的分支与上游分支 'origin/master' 一致。
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
@@ -564,8 +203,10 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
@@ -576,8 +217,10 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
@@ -588,8 +231,192 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支和 'origin/sha256' 出现了偏离，
+并且分别有 5 和 46 处不同的提交。
+  （使用 "git pull" 来合并远程分支）
+COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
@@ -688,7 +515,139 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
+COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
 您的分支与上游分支 'origin/master' 一致。
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
@@ -700,7 +659,7 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
 您的分支与上游分支 'origin/master' 一致。
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
@@ -712,7 +671,7 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
 您的分支与上游分支 'origin/master' 一致。
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
@@ -724,7 +683,7 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
 您的分支与上游分支 'origin/master' 一致。
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
@@ -736,7 +695,139 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
+您的分支与上游分支 'origin/master' 一致。
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
+COMMITID: e373810ce855cc63689e688cb2ae636573dd96b0
 您的分支与上游分支 'origin/master' 一致。
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
@@ -832,323 +923,8 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/faststr.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/multithread.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/queue.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
+您的分支与上游分支 'origin/original' 一致。
+COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
@@ -1163,32 +939,8 @@ mounting...
 COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
   Building modules, stage 2.
   MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
 make[1]: 离开目录“/usr/src/linux-nova-master”
 umounting...
 Removing the old kernel module...
@@ -1243,774 +995,12 @@ Removing the old kernel module...
 Inserting the new kernel module...
 mounting...
 /home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/faststr.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/multithread.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/queue.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
 您的分支与上游分支 'origin/original' 一致。
 COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   Building modules, stage 2.
   MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/faststr.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/multithread.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/queue.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256' 一致。
-COMMITID: 50b6699b8a20b3ba2e04b86b36650d3be0321546
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/sha256-no-prefetch-speculation' 一致。
-COMMITID: 2108925d6b1cb1a98a9f0c594df0d699fa4f15cd
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-COMMITID: b4860d016460abfb087ef9b39fdf76e256f90ec8
-您的分支与上游分支 'origin/master' 一致。
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG6_CP_Linux
-您的分支与上游分支 'origin/original' 一致。
-COMMITID: 52d5a91390fb97a886683a9e77fa19e9d9abbd11
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/bbuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/checksum.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dax.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/dir.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/file.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/gc.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/inode.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/ioctl.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/journal.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/log.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/mprotect.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/namei.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/parity.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rebuild.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/snapshot.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/stats.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/super.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/symlink.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/sysfs.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/perf.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
-  Building modules, stage 2.
-  MODPOST 1 modules
-  CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
-  LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
 make[1]: 离开目录“/usr/src/linux-nova-master”
 umounting...
 Removing the old kernel module...

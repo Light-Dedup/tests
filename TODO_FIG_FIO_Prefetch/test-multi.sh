@@ -35,6 +35,8 @@ do
                 VER=$(bash ../../nvm_tools/"${TIMER}" "${BRANCHES[$STEP]}" "1" | grep "COMMITID" | sed 's/COMMITID: //g')
                 
                 BW1=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=2M -thread -numjobs="$job" -size="${EACH_SIZE}M" -name=test --dedupe_percentage=0 -group_reporting -randseed="$i" | grep WRITE: | awk '{print $2}' | sed 's/bw=//g' | ../../nvm_tools/to_MiB_s)
+                
+                sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=2M -thread -numjobs=16 -size=2G -name=test --dedupe_percentage=0 -group_reporting -randseed=1024
 
                 echo 1 > /proc/fs/NOVA/pmem0/timing_stats  
                 

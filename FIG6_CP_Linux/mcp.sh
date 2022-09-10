@@ -23,7 +23,7 @@ fi
 size=$(du -sh "$1" --block-size=M | awk '{print $1}')
 size=${size%?}
 
-time=$(/bin/time -f %e bash -c "ulimit -n 1000000 && sudo mcp $1 $2 $3" 3>&1 1>&2 2>&3)  
+time=$(/bin/time -f %e bash -c "ulimit -n 1000000 && sudo mcp $1 $2 $3 $((2 * 1024 * 1024))" 3>&1 1>&2 2>&3)  
 # echo "$time"
 # bw=$((size / time))
 bw=$(echo "$size/$time"|bc)
