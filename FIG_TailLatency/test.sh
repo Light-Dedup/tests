@@ -14,7 +14,8 @@ TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
 BRANCHES=( "master" "sha256" "master" "original" )
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table"
-table_create "$TABLE_NAME" "file_system dup_rate num_job tail90 tail95 tail99 tail995 tail999 tail9995 tail9999 tail99999 tail999999 tail9999999 tail99999999"
+table_create "$TABLE_NAME" "file_system dup_rate num_job tail50 tail60 tail70 tail80 tail90 tail95 tail99 tail995 tail999 tail9995 tail9999"
+# tail99999 tail999999 tail9999999 tail99999999"
 
 loop=1
 if [ "$1" ]; then
@@ -33,9 +34,14 @@ do
 
                     bash ../../nvm_tools/"$TIMER" "${BRANCHES[$STEP]}" "0"
 
-                    OUTPUT=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=4K -thread -numjobs=$job -size=${EACH_SIZE}M -name=test --dedupe_percentage=0 -nrfiles=128 -group_reporting --percentile_list=90.00:95.00:99.00:99.50:99.90:99.95:99.99:99.999:99.9999:99.99999:99.999999)
+                    # OUTPUT=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=4K -thread -numjobs=$job -size=${EACH_SIZE}M -name=test --dedupe_percentage=0 -nrfiles=128 -group_reporting --percentile_list=90.00:95.00:99.00:99.50:99.90:99.95:99.99:99.999:99.9999:99.99999:99.999999)
+                    OUTPUT=$(sudo fio -directory=/mnt/pmem0 -fallocate=none -direct=1 -iodepth 1 -rw=write -ioengine=sync -bs=4K -thread -numjobs=$job -size=${EACH_SIZE}M -name=test --dedupe_percentage=0 -nrfiles=128 -group_reporting)
 
                     echo "$OUTPUT" > fio-output
+                    tail50=$(python3 extract.py fio-output 50.00)
+                    tail60=$(python3 extract.py fio-output 60.00)
+                    tail70=$(python3 extract.py fio-output 70.00)
+                    tail80=$(python3 extract.py fio-output 80.00)
                     tail90=$(python3 extract.py fio-output 90.00)
                     tail95=$(python3 extract.py fio-output 95.00)
                     tail99=$(python3 extract.py fio-output 99.00)
@@ -43,13 +49,14 @@ do
                     tail999=$(python3 extract.py fio-output 99.90)
                     tail9995=$(python3 extract.py fio-output 99.95)
                     tail9999=$(python3 extract.py fio-output 99.99)
-                    tail99999=$(python3 extract.py fio-output 99.999)
-                    tail999999=$(python3 extract.py fio-output 99.9999)
-                    tail9999999=$(python3 extract.py fio-output 99.99999)
-                    tail99999999=$(python3 extract.py fio-output 99.999999)
+                    # tail99999=$(python3 extract.py fio-output 99.999)
+                    # tail999999=$(python3 extract.py fio-output 99.9999)
+                    # tail9999999=$(python3 extract.py fio-output 99.99999)
+                    # tail99999999=$(python3 extract.py fio-output 99.999999)
 
 
-                    table_add_row "$TABLE_NAME" "$file_system $dup_rate $job $tail90 $tail95 $tail99 $tail995 $tail999 $tail9995 $tail9999 $tail99999 $tail999999 $tail9999999 $tail99999999"    
+                    table_add_row "$TABLE_NAME" "$file_system $dup_rate $job $tail50 $tail60 $tail70 $tail80 $tail90 $tail95 $tail99 $tail995 $tail999 $tail9995 $tail9999" 
+                    # $tail99999 $tail999999 $tail9999999 $tail99999999"    
                 done
             done
             STEP=$((STEP + 1))

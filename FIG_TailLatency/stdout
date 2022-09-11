@@ -1,5 +1,17 @@
 您的分支与上游分支 'origin/master' 一致。
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
+COMMITID: c5ed5a969d477bbabdcaa667e97535587a1d2dae
+make -C /lib/modules/5.1.0/build M=`pwd`
+make[1]: 进入目录“/usr/src/linux-nova-master”
+  Building modules, stage 2.
+  MODPOST 1 modules
+make[1]: 离开目录“/usr/src/linux-nova-master”
+umounting...
+Removing the old kernel module...
+Inserting the new kernel module...
+mounting...
+/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG_TailLatency
+您的分支与上游分支 'origin/sha256' 一致。
+COMMITID: b2d4d689f71acac1c392d60991bf5a4eb256c5a7
 make -C /lib/modules/5.1.0/build M=`pwd`
 make[1]: 进入目录“/usr/src/linux-nova-master”
   CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/balloc.o
@@ -26,30 +38,11 @@ make[1]: 进入目录“/usr/src/linux-nova-master”
   CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/meta.o
   CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/table.o
   CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/entry.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/faststr.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/multithread.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/xatable.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/queue.o
-  CC [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/rhashtable-ext.o
   LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.o
   Building modules, stage 2.
   MODPOST 1 modules
   CC      /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.mod.o
   LD [M]  /home/deadpool/Light-Dedup/Light-Dedup-AD/Light-Dedup/nova.ko
-make[1]: 离开目录“/usr/src/linux-nova-master”
-umounting...
-Removing the old kernel module...
-Inserting the new kernel module...
-mounting...
-/home/deadpool/Light-Dedup/Light-Dedup-AD/tests/FIG_TailLatency
-您的分支和 'origin/sha256' 出现了偏离，
-并且分别有 5 和 46 处不同的提交。
-  （使用 "git pull" 来合并远程分支）
-COMMITID: b49051acbbe2bd1d1c77b93d2eb6e400b50233eb
-make -C /lib/modules/5.1.0/build M=`pwd`
-make[1]: 进入目录“/usr/src/linux-nova-master”
-  Building modules, stage 2.
-  MODPOST 1 modules
 make[1]: 离开目录“/usr/src/linux-nova-master”
 umounting...
 Removing the old kernel module...
