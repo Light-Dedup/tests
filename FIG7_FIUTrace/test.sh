@@ -5,9 +5,9 @@ source "../common.sh"
 ABS_PATH=$(where_is_script "$0")
 mkdir -p "$ABS_PATH"/M_DATA
 
-FILE_SYSTEMS=( "Light-Dedup-Async" "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
-SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
-BRANCHES=( "async-deref-dev" "master" "sha256" "master" "original" )
+FILE_SYSTEMS=( "Light-Dedup" "Light-Dedup(SHA256)" "NV-Dedup" "NOVA")
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
+BRANCHES=( "master" "sha256" "master" "original" )
 TRACES=( "homes-110108-112108.1-21.blkparse" "webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "cheetah.cs.fiu.edu-110108-113008.1-2.blkparse" )
 MAX_C_BLKS=( 1 512 )
 NUM_JOBS=( 1 2 4 8 16 )

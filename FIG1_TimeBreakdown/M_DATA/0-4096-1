@@ -2,16 +2,16 @@
 
 ================ Initialization ================
 
-init: count 1, timing 66583, average 66583
-mount: count 1, timing 2910929217, average 2910929217
+init: count 1, timing 68541, average 68541
+mount: count 1, timing 2900355667, average 2900355667
 ioremap: count 0, timing 0, average 0
-new_init: count 1, timing 2910733737, average 2910733737
+new_init: count 1, timing 2900144754, average 2900144754
 recovery: count 0, timing 0, average 0
 
 ============= Directory operations =============
 
-create: count 1, timing 17346, average 17346
-lookup: count 1, timing 880, average 880
+create: count 1, timing 18624, average 18624
+lookup: count 1, timing 610, average 610
 link: count 0, timing 0, average 0
 unlink: count 0, timing 0, average 0
 symlink: count 0, timing 0, average 0
@@ -20,7 +20,7 @@ rmdir: count 0, timing 0, average 0
 mknod: count 0, timing 0, average 0
 rename: count 0, timing 0, average 0
 readdir: count 0, timing 0, average 0
-add_dentry: count 1, timing 4258, average 4258
+add_dentry: count 1, timing 3770, average 3770
 remove_dentry: count 0, timing 0, average 0
 setattr: count 0, timing 0, average 0
 setsize: count 0, timing 0, average 0
@@ -28,8 +28,8 @@ setsize: count 0, timing 0, average 0
 ================ I/O operations ================
 
 dax_read: count 0, timing 0, average 0
-do_cow_write: count 1048576, timing 9788434667, average 9334
-cow_write: count 1048576, timing 9861972350, average 9405
+do_cow_write: count 1048576, timing 4092647790, average 3903
+cow_write: count 1048576, timing 4167555112, average 3974
 inplace_write: count 0, timing 0, average 0
 copy_to_nvmm: count 0, timing 0, average 0
 dax_get_block: count 0, timing 0, average 0
@@ -40,29 +40,29 @@ wrap_iter: count 0, timing 0, average 0
 ============== Memory operations ===============
 
 memcpy_read_nvmm: count 0, timing 0, average 0
-memcpy_write_nvmm: count 262068, timing 233827135, average 892
+memcpy_write_nvmm: count 1048576, timing 1064703611, average 1015
 memcpy_write_back_to_nvmm: count 0, timing 0, average 0
 handle_partial_block: count 0, timing 0, average 0
 
 ============== Memory management ===============
 
-alloc_blocks: count 262149, timing 9188636, average 35
-new_data_blocks: count 262068, timing 20330845, average 77
-new_log_blocks: count 81, timing 28669139, average 353939
+alloc_blocks: count 1048657, timing 35729182, average 34
+new_data_blocks: count 1048576, timing 77879014, average 74
+new_log_blocks: count 81, timing 28896821, average 356750
 free_blocks: count 0, timing 0, average 0
 free_data_blocks: count 0, timing 0, average 0
 free_log_blocks: count 0, timing 0, average 0
 
 ================= Transaction ==================
 
-transaction_new_inode: count 1, timing 2234, average 2234
+transaction_new_inode: count 1, timing 2823, average 2823
 transaction_link_change: count 0, timing 0, average 0
-update_tail: count 1048579, timing 19994790, average 19
+update_tail: count 1048579, timing 19954054, average 19
 
 ============= Logging operations ===============
 
-append_dir_entry: count 1, timing 2986, average 2986
-append_file_entry: count 1048576, timing 856012617, average 816
+append_dir_entry: count 1, timing 2541, average 2541
+append_file_entry: count 1048576, timing 917336506, average 874
 append_mmap_entry: count 0, timing 0, average 0
 append_link_change: count 0, timing 0, average 0
 append_setattr: count 0, timing 0, average 0
@@ -72,13 +72,13 @@ inplace_update_entry: count 0, timing 0, average 0
 =============== Tree operations ================
 
 checking_entry: count 0, timing 0, average 0
-assign_blocks: count 1048576, timing 51992124, average 49
+assign_blocks: count 1048576, timing 60782296, average 57
 
 ============= Garbage collection ===============
 
-log_fast_gc: count 15, timing 13659767, average 910651
+log_fast_gc: count 15, timing 12163463, average 810897
 log_thorough_gc: count 0, timing 0, average 0
-check_invalid_log: count 32752, timing 608382, average 18
+check_invalid_log: count 32752, timing 620012, average 18
 
 ============ Integrity operations ==============
 
@@ -104,13 +104,13 @@ direct_IO: count 0, timing 0, average 0
 free_old_entry: count 0, timing 0, average 0
 delete_file_tree: count 0, timing 0, average 0
 delete_dir_tree: count 0, timing 0, average 0
-new_vfs_inode: count 1, timing 8729, average 8729
-new_nova_inode: count 1, timing 639, average 639
+new_vfs_inode: count 1, timing 9516, average 9516
+new_nova_inode: count 1, timing 700, average 700
 free_inode: count 0, timing 0, average 0
 free_inode_log: count 0, timing 0, average 0
 evict_inode: count 0, timing 0, average 0
 test_perf: count 0, timing 0, average 0
-wprotect: count 4817604, timing 629178358, average 130
+wprotect: count 6390620, timing 1151592124, average 180
 
 =============== MMap operations ================
 
@@ -127,7 +127,7 @@ mmap_handler: count 0, timing 0, average 0
 
 =================== Rebuild ====================
 
-rebuild_dir: count 1, timing 4482, average 4482
+rebuild_dir: count 1, timing 4190, average 4190
 rebuild_file: count 0, timing 0, average 0
 rebuild_snapshot_table: count 0, timing 0, average 0
 
@@ -141,11 +141,11 @@ append_snapshot_inode: count 0, timing 0, average 0
 
 ================== NV-Dedup ===================
 
-strong_fingerprint_calculation: count 1043452, timing 6366816284, average 6101
-weak_fingerprint_calculation: count 1048513, timing 349782735, average 333
-hash_table_find: count 1986370, timing 279939173, average 140
-real_block_write: count 262068, timing 267905665, average 1022
-non_fin_calc: count 63, timing 63554, average 1008
-ws_fin_calc: count 110656, timing 789800334, average 7137
-str_fin_calc: count 937857, timing 6673341854, average 7115
+strong_fingerprint_calculation: count 42, timing 346288, average 8244
+weak_fingerprint_calculation: count 522752, timing 172239698, average 329
+hash_table_find: count 522773, timing 71294415, average 136
+real_block_write: count 1048576, timing 1198837502, average 1143
+non_fin_calc: count 525824, timing 704582249, average 1339
+ws_fin_calc: count 522752, timing 885296503, average 1693
+str_fin_calc: count 0, timing 0, average 0
 
