@@ -10,7 +10,7 @@ NUM_JOBS=( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 )
 # Multi Threads
 FILE_SYSTEMS=( "Naive" "Speculation-64" "Prefetch-Next" "Transition")
 TIMERS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "no-prefetch-speculation-precmp" "no-prefetch" "no-transition" "master")
+BRANCHES=( "no-prefetch-speculation-precmp" "speculation-64" "no-transition" "master")
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table-multi"
 table_create "$TABLE_NAME" "file_system num_job first_bandwidth(MiB/s) second_bandwidth(MiB/s) second_cmp_lat(ns) second_fp_lat(ns) second_prefetch_lat(ns) second_lookup_lat(ns) second_others_lat(ns) second_lat(ns)"
