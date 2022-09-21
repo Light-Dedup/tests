@@ -18,11 +18,15 @@ do
     cd "$filename" || exit
 
     if [ -f "plot.ipynb" ]; then
-        ipython plot.ipynb
+        ipython -c "%run plot.ipynb"
+    fi
+
+    if [ -f "plot-interleaved.ipynb" ]; then
+        ipython -c "%run plot-interleaved.ipynb" 
     fi
 
     if [ -f "report.ipynb" ]; then
-        ipython report.ipynb
+        ipython -c "%run report.ipynb" 
     fi
 
     cd - || exit
