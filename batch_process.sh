@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-loop=1
-if [ "$1" ]; then
-  loop=$1
-fi
 
 for filename in `ls`
 do
@@ -23,9 +19,9 @@ do
 
     cd "$filename" || exit
 
-    # Aggregate Results
-    if [ -f "agg.sh" ]; then
-        bash agg.sh "$loop"
+    # Run Process Script
+    if [ -f "process.py" ]; then
+        python3 process.py
     fi
 
     cd - || exit

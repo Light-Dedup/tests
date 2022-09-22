@@ -1,0 +1,4 @@
+system whole_time fp_time IO_time cmp_time others bw
+NOVA 2805 0 1885 0 920 1392
+NO-SPECULATION-First 2736 470 491 0 1774 1427
+NO-SPECULATION-Second 5607 460 0 3087 2059 696
