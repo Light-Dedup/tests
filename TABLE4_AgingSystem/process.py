@@ -25,7 +25,7 @@ def process_table(table:str, writer):
                 file_size = 128
             elif table == "aging_table":
                 file_size = 64
-            return (int(row[type]) - int(base[type])) / (file_size * 1024 * 256) / 32
+            return (int(row[type]) - int(base[type])) / (file_size * 1024 * 256) / 40
         
         def calc_bw(table, row):
             if table == "newly_table":
