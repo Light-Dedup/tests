@@ -7,40 +7,40 @@
       \cline{2-5}                    & \makecell[c]{Region} & \makecell[c]{Entry} & \makecell[c]{\textbf{Region}} & \makecell[c]{Entry} \\
       \hline
       \makecell[c]{Reads Per\\Block (B)} &  
-      \makecell[c]{105.75 \\(3.3$\times$)}
+      \makecell[c]{96.07 \\(3.0$\times$)}
       & 
-      \makecell[c]{106.37\\ (3.32$\times$)}       
+      \makecell[c]{99.99\\ (3.12$\times$)}       
       &     
-      \textbf{\makecell[c]{123.14 \\(3.85$\times$)}}    
+      \textbf{\makecell[c]{185.02 \\(5.78$\times$)}}    
       & 
-      \makecell[c]{556.76 \\(17.4$\times$)}      \\
+      \makecell[c]{636.45 \\(19.89$\times$)}      \\
       \hline
       \makecell[c]{Writes Per\\Block (B)} & 
-      \makecell[c]{69.52 \\(2.17$\times$)} 
+      \makecell[c]{61.19 \\(1.91$\times$)} 
       & 
-      \makecell[c]{69.78\\ (2.18$\times$)}    
+      \makecell[c]{62.48\\ (1.95$\times$)}    
       & 
-      \textbf{\makecell[c]{69.63 \\(2.18$\times$)}} 
+      \textbf{\makecell[c]{105.35 \\(3.29$\times$)}} 
       & 
-      \makecell[c]{286.99\\ (8.97$\times$)}   \\
+      \makecell[c]{322.2\\ (10.07$\times$)}   \\
       \hline
       \makecell[c]{Throughput \\ (MiB/s)} & 
-      1696.26
+      1590.12
       & 
-      1701.92
+      1534.58
       & 
-      \textbf{1343.29}   
+      \textbf{1222.75}   
       & 
-      1140.24    \\
+      1072.85    \\
       \hline
       Latency (ns) & 
-      2302.86
+      2456.57
       & 
-      2295.21  
+      2545.48  
       & 
-      \textbf{2907.97}   
+      \textbf{3194.65}   
       & 
-      3425.82    \\
+      3640.99    \\
       \hline
     \end{tabular}
   }

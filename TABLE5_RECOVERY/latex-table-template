@@ -5,7 +5,7 @@
       \hline
       \multirow{2}*{Dimension} & \multirow{2}*{File System} & \multicolumn{3}{c|}{File system utilization (GiB)} \\
       \cline{3-5} & & 32 $\times$ 1 & 32 $\times$ 2 & 32 $\times$ 4 \\
-      \hline
+      \hline\hline
       \multirow{2}*{Umount Time (s)} & NOVA & {NOVA-UMOUNT-32} & {NOVA-UMOUNT-64} & {NOVA-UMOUNT-128} \\
       \cline{2-5} ~ & Light-Dedup &  
       {Light-Dedup-UMOUNT-32} & {Light-Dedup-UMOUNT-64} & {Light-Dedup-UMOUNT-128} \\

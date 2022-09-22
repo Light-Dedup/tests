@@ -5,7 +5,7 @@
       \hline
       \multirow{2}*{Dimension}         & \multicolumn{2}{c|}{ \makecell[c]{Fresh System (128 GiB)}} & \multicolumn{2}{c|}{\makecell[c]{Aged System (64 GiB)}} \\
       \cline{2-5}                    & \makecell[c]{Region} & \makecell[c]{Entry} & \makecell[c]{\textbf{Region}} & \makecell[c]{Entry} \\
-      \hline
+      \hline\hline
       \makecell[c]{Reads Per\\Block (B)} &  
       \makecell[c]{{REGION-NEW-RPB} \\({REGION-NEW-RAMP}$\times$)}
       & 
