@@ -5,13 +5,13 @@ ABS_PATH=$(where_is_script "$0")
 mkdir -p "$ABS_PATH"/M_DATA
 NUM_JOBS=( 1 8 )
 
-# FILE_SYSTEMS=( "Light-Dedup" "Naive" "DeNOVA" "NV-Dedup" "NOVA" )
-# SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
-# BRANCHES=( "master" "no-prefetch-speculation-precmp" "denova" "master" "original" )
+FILE_SYSTEMS=( "Light-Dedup" "Naive" "DeNOVA" "NV-Dedup" "NOVA" )
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
+BRANCHES=( "master" "no-prefetch-speculation-precmp" "denova" "master" "original" )
 
-FILE_SYSTEMS=( "Light-Dedup" "Naive" "NOVA" )
-SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "master" "no-prefetch-speculation-precmp" "original" )
+# FILE_SYSTEMS=( "Light-Dedup" "Naive" "NOVA" )
+# SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
+# BRANCHES=( "master" "no-prefetch-speculation-precmp" "original" )
 
 TABLE_NAME="$ABS_PATH/performance-comparison-table-cp-5-times"
 table_create "$TABLE_NAME" "file_system num_job first_bw second_bw"

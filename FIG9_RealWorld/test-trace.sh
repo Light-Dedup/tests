@@ -5,15 +5,15 @@ source "../common.sh"
 ABS_PATH=$(where_is_script "$0")
 mkdir -p "$ABS_PATH"/M_DATA
 
-# FILE_SYSTEMS=( "Light-Dedup" "Naive" "DeNOVA" "NV-Dedup" "NOVA" )
-# SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
-# BRANCHES=( "master" "no-prefetch-speculation-precmp" "denova" "master" "original" )
-# MODES=( "rw" "rw" "a" "rw" "rw" )
+FILE_SYSTEMS=( "Light-Dedup" "Naive" "DeNOVA" "NV-Dedup" "NOVA" )
+SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
+BRANCHES=( "master" "no-prefetch-speculation-precmp" "denova" "master" "original" )
+MODES=( "rw" "rw" "a" "rw" "rw" )
 
-FILE_SYSTEMS=( "Light-Dedup" "Naive" "NOVA" )
-SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
-BRANCHES=( "master" "no-prefetch-speculation-precmp" "original" )
-MODES=( "rw" "rw" "rw" )
+# FILE_SYSTEMS=( "Light-Dedup" "Naive" "NOVA" )
+# SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
+# BRANCHES=( "master" "no-prefetch-speculation-precmp" "original" )
+# MODES=( "rw" "rw" "rw" )
 
 NAMES=( "homes-2022-fall-50.hitsztrace" "webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "cheetah.cs.fiu.edu-110108-113008.1.blkparse" )
 TRACES=( "/mnt/sdb/HITSZ_LAB_Traces/homes-2022-fall-50.hitsztrace" "/mnt/sdb/FIU_Traces/webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "/mnt/sdb/FIU_Traces/cheetah.cs.fiu.edu-110108-113008.1.blkparse" )
