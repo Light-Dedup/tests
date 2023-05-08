@@ -68,3 +68,10 @@ do
     cd - || exit
   fi
 done
+
+# Aggregate Results by using average value
+bash batch_agg.sh "$loop"
+# Draw Figures
+bash batch_draw.sh
+# Fetch all figures in fig-fetched
+bash fetch_all_figures.sh

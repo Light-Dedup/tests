@@ -1,0 +1,18 @@
+\begin{table}[t]
+  \centering
+  \setlength{\belowcaptionskip}{-2em}
+  \resizebox{\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|c|}
+      \hline
+      \multirow{2}{*}{System} & \multicolumn{2}{c|}{Calc. Lat (ms)} & \multicolumn{2}{c|}{I/O Lat (ms)} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Bandwidth\\(MiB/s)\end{tabular}} \\ \cline{2-5}
+       & fp & others & write & cmp &  \\ \hline\hline
+      NOVA & 0.0 & 84.7 & 2275.6 & 0.0 & 1401 \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Naive (1st)\end{tabular} & 309.9 & 1072.5 & \textbf{585.3} & 0.0 & 1612 \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Naive (2nd)\end{tabular} & 308.0 & 571.6 & 0.0 & \textbf{3263.0} & 870 \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Light (1st)\end{tabular} & 310.0 & 1131.3 & \textbf{559.8} & 0.0 & 1592 \\ \hline
+      \begin{tabular}[c]{@{}c@{}}Light (2nd)\end{tabular} & 0.0 & 343.3 & 0.0 & \textbf{1234.8} & 1914 \\ \hline
+    \end{tabular}
+  }
+  \caption{The breakdown deduplication time. Naive denotes Naive-Dedup, and Light denotes Light-Dedup, with speculative prefetch, content-comparison time is dropped by 50\%.}
+  \label{tab_dedupbreakdown}
+\end{table}

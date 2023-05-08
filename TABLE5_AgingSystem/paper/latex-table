@@ -1,0 +1,49 @@
+\begin{table}[tbp]
+  \centering
+  \resizebox{\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      \multirow{2}*{Dimension}         & \multicolumn{2}{c|}{ \makecell[c]{Fresh System (128 GiB)}} & \multicolumn{2}{c|}{\makecell[c]{Aged System (64 GiB)}} \\
+      \cline{2-5}                    & \makecell[c]{Region} & \makecell[c]{Entry} & \makecell[c]{\textbf{Region}} & \makecell[c]{Entry} \\
+      \hline
+      \makecell[c]{Reads Per\\Block (B)} &  
+      \makecell[c]{116.28 \\(2.91$\times$)}
+      & 
+      \makecell[c]{126.94\\ (3.17$\times$)}       
+      &     
+      \textbf{\makecell[c]{244.19 \\(6.1$\times$)}}    
+      & 
+      \makecell[c]{774.13 \\(19.35$\times$)}      \\
+      \hline
+      \makecell[c]{Writes Per\\Block (B)} & 
+      \makecell[c]{75.75 \\(1.89$\times$)} 
+      & 
+      \makecell[c]{79.56\\ (1.99$\times$)}    
+      & 
+      \textbf{\makecell[c]{137.17 \\(3.43$\times$)}} 
+      & 
+      \makecell[c]{394.54\\ (9.86$\times$)}   \\
+      \hline
+      \makecell[c]{Throughput \\ (MiB/s)} & 
+      1747.5
+      & 
+      1690.6
+      & 
+      \textbf{1336.72}   
+      & 
+      1197.76    \\
+      \hline
+      Latency (ns) & 
+      2235.34
+      & 
+      2310.57  
+      & 
+      \textbf{2922.28}   
+      & 
+      3261.3    \\
+      \hline
+    \end{tabular}
+  }
+  \caption{Comparison of region-based and entry-based metadata layout under aging workload.}
+  \label{tab4_region_based_metadata_layout}
+\end{table}

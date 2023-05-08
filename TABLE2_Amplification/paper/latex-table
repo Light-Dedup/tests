@@ -9,8 +9,8 @@
       \cline{2-5}                     & Read (B)    & Write (B) & Read (B) & Write (B)   \\
       \hline
       ideal                           & $\approx$40 & 40        & 40       & $\approx$40 \\
-      \hline\hline
-      All-in-NVM                      & {FIRST-READ}       & {FIRST-WRITE}     & {SECOND-READ}    & {SECOND-WRITE}       \\
+      \hline
+      All-in-NVM                      & 726.12       & 293.17     & 528.65    & 259.05       \\
       \hline
       Entry-based                     & (See Table 5 in our Paper)       & (See Table 5 in our Paper)     & (See Table 5 in our Paper)   & (See Table 5 in our Paper)      \\
       \hline

@@ -4,7 +4,7 @@ Test scripts for Light-Dedup.
 
 ### Server with NVMs
 
-A server with at least one NVM equipped (256GiB). Note that if the user wants to reproduce the interleaved performance of Light-Dedup in Section Discussion (Figure 11), at least two NVMs are required.
+A server with at least one NVM equipped (256GiB). Note that if the user wants to reproduce the interleaved performance of Light-Dedup in Section Discussion (Scalability on Multiple Optane DCPMMs), at least two NVMs are required.
 
 ### Sufficient memory
 
@@ -22,4 +22,4 @@ Note that we configure the tested pmem to /dev/pmem0 as default. The correspondi
 
 ## Step-by-Step reproducing
 
-All the corresponding test scripts and results for reference (with the "-in-paper" suffix, which is also presented in the paper) are included in "tests" directory. After setting up the experimental environment, the user changes the directory to where the scripts stand, and simply runs the script by typing "./test.sh". For example, to reproduce Figure 1, all the things that a user needs to do are changing directory to ./tests/FIG1_TimeBreakdown, and running "./test.sh". Note that, for Figure 10, Table 2, and Table 4, we have created "process.py" scripts to calculate the output result from "./test.sh"
+All the corresponding test scripts and results for reference (in the paper directory) are included in "tests" directory. After setting up the experimental environment, the user changes the directory to where the scripts stand, and simply runs the script by typing "./test.sh". For example, to reproduce Figure 7, all the things that a user needs to do are changing directory to ./tests/FIG7_FIO, and running "./test.sh". Note that, for Table 2, Table 3, Table 5, and Table 6, we have created "process.py" scripts to calculate the output result from "./test.sh". In addition, for these tables, you can run "./craft_latex_table.py" further to get the results in the format of LaTeX table (as the reference to paper). 

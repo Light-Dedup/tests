@@ -1,0 +1,25 @@
+\begin{table}[t]
+  \centering
+  \resizebox{\linewidth}{!}{
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      \multirow{2}*{Dimension} & \multirow{2}*{File System} & \multicolumn{3}{c|}{File system utilization (GiB)} \\
+      \cline{3-5} & & 32 $\times$ 1 & 32 $\times$ 2 & 32 $\times$ 4 \\
+      \hline
+      \multirow{2}*{Umount Time (s)} & NOVA & 0.385 & 0.775 & 1.502 \\
+      \cline{2-5} ~ & Light-Dedup &  
+      0.551 & 1.095 & 2.099 \\
+      \hline
+      \multirow{2}*{\makecell[c]{Normal Recovery\\ Time (s)}} & NOVA & 0.015 & 0.015 & 0.015 \\
+      \cline{2-5} ~ & Light-Dedup &  
+      0.617 & 1.223 & 2.398 \\
+      \hline
+      \multirow{2}*{\makecell[c]{Failure Recovery \\ Time (s)}} & NOVA & 0.315 & 0.488 & 0.829 \\
+      \cline{2-5} ~ & Light-Dedup &  
+      1.26 & 2.372 & 4.604 \\
+      \hline
+    \end{tabular}
+  }
+  \caption{Comparison of recovery overheads.}
+  \label{tab5_recovery}
+\end{table}
