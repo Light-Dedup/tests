@@ -13,7 +13,7 @@ BRANCHES=( "master" "no-prefetch-speculation-precmp" "denova" "master" "original
 # SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
 # BRANCHES=( "master" "no-prefetch-speculation-precmp" "original" )
 
-TABLE_NAME="$ABS_PATH/performance-comparison-table-cp-5-times"
+TABLE_NAME="$ABS_PATH/performance-comparison-table-cp"
 table_create "$TABLE_NAME" "file_system num_job first_bw second_bw"
 
 STEP=0

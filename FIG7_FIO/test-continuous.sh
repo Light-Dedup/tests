@@ -13,13 +13,14 @@ FILE_SYSTEMS=( "Light-Dedup" "Naive" "DeNOVA" "NV-Dedup" "NOVA" )
 TIMERS=( "fio_nova.sh" "fio_nova.sh" "fio_nova.sh" "fio_nvdedup.sh" "fio_nova.sh" )
 SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" "setup_nvdedup.sh" "setup_nova.sh" )
 BRANCHES=( "master" "no-prefetch-speculation-precmp" "denova" "master" "original" )
+
 # FILE_SYSTEMS=( "Light-Dedup" "Naive" "NOVA" )
 # TIMERS=( "fio_nova.sh" "fio_nova.sh" "fio_nova.sh" )
 # SETUPS=( "setup_nova.sh" "setup_nova.sh" "setup_nova.sh" )
 # BRANCHES=( "master" "no-prefetch-speculation-precmp" "original" )
 
 
-TABLE_NAME="$ABS_PATH/performance-comparison-table-continous-5-times"
+TABLE_NAME="$ABS_PATH/performance-comparison-table-continuous"
 table_create "$TABLE_NAME" "file_system dup_rate num_job bandwidth(MiB/s)"
 
 loop=1

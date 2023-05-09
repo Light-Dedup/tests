@@ -10,6 +10,7 @@ NUM_JOBS=( 1 )
 FILE_SYSTEMS=( "Volatile-FP" "Region-based" "Fine-grained"  )
 TIMERS=( "aging_amount.sh" "aging_amount.sh" "aging_amount.sh" )
 BRANCHES=( "volatile-fpentry" "master" "entry-based" )
+
 PMEM_ID=0x0020
 if [ "$1" ]; then
     PMEM_ID=$1
@@ -37,11 +38,15 @@ do
                     TIMER=${TIMERS[$STEP]}
                     
                     OUTPUT=$(bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M 0 "${BRANCHES[$STEP]}" "$fsize" "$age" "$PMEM_ID")
-                
+                    # bash ../../nvm_tools/"$TIMER" "$job" "${EACH_SIZE}"M 0 "${BRANCHES[$STEP]}" "$fsize" "$age" "$PMEM_ID"
+                    # echo "$OUTPUT"
+
                     READS=$(echo "$OUTPUT" | grep MediaReads | awk '{print $2}')
                     WRITES=$(echo "$OUTPUT" | grep MediaWrites | awk '{print $2}')
                     NewlyWriteTime=$(echo "$OUTPUT" | grep NewlyWriteTime | awk '{print $2}')
                     AgingWriteTime=$(echo "$OUTPUT" | grep AgingWriteTime | awk '{print $2}')
+                    NewlyDedupCost=$(echo "$OUTPUT" | grep NewlyDedupCost | awk '{print $2}')
+                    AgingDedupCost=$(echo "$OUTPUT" | grep AgingDedupCost | awk '{print $2}')
                     NewlyRead=$(echo "$READS" | sed -n "1p") 
                     AgingRead=$(echo "$READS" | sed -n "2p") 
                     NewlyWrite=$(echo "$WRITES" | sed -n "1p") 

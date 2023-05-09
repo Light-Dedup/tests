@@ -22,7 +22,7 @@ FMTS=( "hitsz" "fiu" "fiu" )
 MAX_C_BLKS=( 1 512 )
 NUM_JOBS=( 1 8 )
 
-TABLE_NAME="$ABS_PATH/performance-comparison-table-trace-5-times"
+TABLE_NAME="$ABS_PATH/performance-comparison-table-trace"
 table_create "$TABLE_NAME" "file_system trace cblks job bandwidth(MiB/s)"
 
 loop=1

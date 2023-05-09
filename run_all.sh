@@ -75,3 +75,5 @@ bash batch_agg.sh "$loop"
 bash batch_draw.sh
 # Fetch all figures in fig-fetched
 bash fetch_all_figures.sh
+# Craft latex table
+bash batch_craft_table.sh
