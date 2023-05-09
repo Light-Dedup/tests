@@ -154,7 +154,7 @@ add_valid_count: count 0, timing 0, average 0
 new_region: count 0, timing 0, average 0
 alloc_entry: count 0, timing 0, average 0
 write_new_entry: count 0, timing 0, average 0
-mem_bucket_find: count 7, timing 4919, average 702
+index_lookup: count 7, timing 4919, average 702
 index_insert_new_entry: count 0, timing 0, average 0
 memcmp: count 7, timing 10650, average 1521
 prefetch_next_stage_1: count 1046518, timing 89098281, average 85

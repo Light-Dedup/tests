@@ -151,7 +151,7 @@ add_valid_count: count 8254, timing 1314721, average 159
 new_region: count 8261, timing 9187489, average 1112
 alloc_entry: count 1048576, timing 38166815, average 36
 write_new_entry: count 1048576, timing 45624352, average 43
-mem_bucket_find: count 1048576, timing 114106092, average 108
+index_lookup: count 1048576, timing 114106092, average 108
 index_insert_new_entry: count 1048576, timing 341544459, average 325
 memcmp: count 0, timing 0, average 0
 table_init: count 1, timing 9085, average 9085
