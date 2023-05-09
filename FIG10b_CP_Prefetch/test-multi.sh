@@ -42,7 +42,7 @@ do
             # whole_time=$(( EACH_SIZE * 1000 * 1000 * 1000 / ("$BW2") ))  
             whole_time=$(nova_attr_time_stats "cow_write" "$ABS_PATH"/M_DATA/OUTPUT-"$i")   
             fp_time=$(nova_attr_time_stats "fp_calc" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
-            lookup_time=$(nova_attr_time_stats "mem_bucket_find" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
+            lookup_time=$(nova_attr_time_stats "index_lookup" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
             cmp_time=$(nova_attr_time_stats "memcmp" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
             cmp_user=$(nova_attr_time_stats "cmp_user" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
             prefetch_cmp=$(nova_attr_time_stats "prefetch_cmp" "$ABS_PATH"/M_DATA/OUTPUT-"$i")
