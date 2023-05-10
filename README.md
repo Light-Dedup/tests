@@ -5,8 +5,8 @@
 - [Test scripts for Light-Dedup.](#test-scripts-for-light-dedup)
   - [1. Quick Start](#1-quick-start)
     - [1.1 Hardware prerequisites](#11-hardware-prerequisites)
-  - [1.2 Usage of Light-Dedup repositories](#12-usage-of-light-dedup-repositories)
-  - [1.3 One-click "run\_all.sh"](#13-one-click-run_allsh)
+    - [1.2 Usage of Light-Dedup repositories](#12-usage-of-light-dedup-repositories)
+    - [1.3 One-click "run\_all.sh"](#13-one-click-run_allsh)
   - [2. Step-by-Step reproducing](#2-step-by-step-reproducing)
     - [2.1 Output Results](#21-output-results)
     - [2.2 Reproducing Tables](#22-reproducing-tables)
@@ -20,7 +20,7 @@
 
 - Sufficient memory. Reproducing experiments requires much memory because caching the compiled Linux kernel source code (Figure 6: Microbenchmark with copying compiled kernel source code) requires about 15--20 GiB (depending on the configuration), and the operating system itself and Light-Dedup all require significant memory usage.
 
-## 1.2 Usage of Light-Dedup repositories
+### 1.2 Usage of Light-Dedup repositories
 We have put our related artifacts into github. To reproduce the experiments, the user is required to clone all the repositories listed below into the same directory:
 
 - Light-Dedup Source Codes. https://github.com/Light-Dedup/Light-Dedup.git. Note that we have incorporated DeNOVA into this repository.
@@ -45,7 +45,7 @@ git clone https://github.com/Light-Dedup/tests.git
 git clone https://github.com/Light-Dedup/nv-dedup.git
 ```
 
-## 1.3 One-click "run_all.sh"
+### 1.3 One-click "run_all.sh"
 
 We provide `run_all.sh` that can automatically install the required software, run all the experiments involved in the paper, draw all the figures in our paper, and build similar Latex tables presented in our paper:
 
