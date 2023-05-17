@@ -16,7 +16,7 @@ MODES=( "rw" "rw" "a" "rw" "rw" )
 # MODES=( "rw" "rw" "rw" )
 
 NAMES=( "homes-2022-fall-50.hitsztrace" "webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "cheetah.cs.fiu.edu-110108-113008.1.blkparse" )
-TRACES=( "/mnt/sdb/HITSZ_LAB_Traces/homes-2022-fall-50.hitsztrace" "/mnt/sdb/FIU_Traces/webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "/mnt/sdb/FIU_Traces/cheetah.cs.fiu.edu-110108-113008.1.blkparse" )
+TRACES=( "/data/HITSZ_LAB_Traces/homes-2022-fall-50.hitsztrace" "/data/FIU_Traces/webmail+online.cs.fiu.edu-110108-113008.1-21.blkparse" "/data/FIU_Traces/cheetah.cs.fiu.edu-110108-113008.1.blkparse" )
 FMTS=( "hitsz" "fiu" "fiu" )
 
 MAX_C_BLKS=( 1 512 )
