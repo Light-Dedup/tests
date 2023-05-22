@@ -55,6 +55,8 @@ bash ./run_all.sh
 
 Note that we configure the tested pmem to /dev/pmem0 as default. The corresponding pmem_id is retrieved automatically from the *ipmctl*. 
 
+**Also NOTE: Running all the experiments might require about one day or longer. You can run the `bash ./run_all.sh` in `tmux` to keep on the progress**
+
 ## 2. Step-by-Step reproducing
 
 ### 2.1 Output Results
