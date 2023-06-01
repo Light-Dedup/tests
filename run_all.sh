@@ -47,9 +47,9 @@ do
     # Set pmem0 id
     if [[ "${filename}" == "FIG10_Percore_Allocator" ]]; then
       bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
-    elif [[ "${filename}" == "TABLE2_Amplification" ]]; then
+    elif [[ "${filename}" == "TABLE3_Amplification" ]]; then
       bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
-    elif [[ "${filename}" == "TABLE4_AgingSystem" ]]; then
+    elif [[ "${filename}" == "TABLE5_AgingSystem" ]]; then
       bash test.sh "$PMEM_ID" "$loop" > $OUTNAME
     else    
       bash test.sh "$loop" > $OUTNAME
