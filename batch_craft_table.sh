@@ -18,7 +18,7 @@ do
     cd "$filename" || exit
 
     if [ -f "craft-latex-table.py" ]; then
-        python craft-latex-table.py
+        python3 craft-latex-table.py
     fi
 
     cd - || exit
