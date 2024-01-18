@@ -175,7 +175,7 @@ python3 craft-latex-table.py
 ### 2.3 Reproducing Figures
 **Figure 7: Microbenchmark with FIO**. The corresponding script is presented in `<Your directory>/tests/FIG7_FIO/test.sh`. The output results are presented in ``performance-comparison-table-continuous'' for 2MiB write and ``performance-comparison-table-4K'' for 4KiB write. The user can use ``plot.ipynb'' to plot the figure. 
 
-**Figure 9: Performance comparison of real-world scenarios**. The corresponding script is presented in `<Your directory>/tests/FIG9_RealWorld/test.sh`. The output results are presented in `performance-comparison-table-trace` for replaying traces and `performance-comparison-table-cp` for copying the Linux kernel. Similarly, the user can use `plot.ipynb` to plot the figure. 
+**Figure 9: Performance comparison of real-world scenarios**. The corresponding script is presented in `<Your directory>/tests/FIG9_RealWorld/test.sh`. The ***Homes*** trace can be downloaded here: <https://github.com/Light-Dedup/tests/releases/tag/homes-2022-fall-50>. The output results are presented in `performance-comparison-table-trace` for replaying traces and `performance-comparison-table-cp` for copying the Linux kernel. Similarly, the user can use `plot.ipynb` to plot the figure. 
 
 **Figure 10: performance-comparison-table-trace**. The corresponding scripts are presented in `<Your directory>/tests/FIG10a_FIO_Prefetch/test.sh` and `<Your directory>/tests/FIG10b_CP_Prefetch/test.sh`. The user should use either `plot.ipynb` to plot the figure after running these two `test.sh` scripts. For brevity, we present the commands as follows:
 
